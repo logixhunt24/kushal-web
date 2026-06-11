@@ -1,0 +1,90 @@
+export const services = [
+  {
+    id: "deep-cleaning",
+    name: "Full Home Deep Cleaning",
+    category: "cleaning",
+    price: "From $99",
+    rating: 4.9,
+    reviews: 1205,
+    description: "Thorough cleaning of rooms, kitchens, bathrooms, window panes, and floor scrubbing.",
+    iconName: "Sparkles",
+    popular: true
+  },
+  {
+    id: "ac-servicing",
+    name: "AC Repair & Servicing",
+    category: "appliances",
+    price: "From $49",
+    rating: 4.8,
+    reviews: 948,
+    description: "Filter cleaning, gas filling, and troubleshooting of split and window air conditioners.",
+    iconName: "Wind",
+    popular: true
+  },
+  {
+    id: "plumbing-fix",
+    name: "Plumbing Repair Service",
+    category: "repairs",
+    price: "From $39",
+    rating: 4.7,
+    reviews: 822,
+    description: "Fixing leakages, blocks, pipe installations, and fitting bathroom accessories.",
+    iconName: "Droplet",
+    popular: true
+  },
+  {
+    id: "massage-therapy",
+    name: "Stress Relief Massage",
+    category: "personal-care",
+    price: "From $59",
+    rating: 4.9,
+    reviews: 742,
+    description: "Soothing deep tissue or aromatherapy massages by certified therapists at home.",
+    iconName: "Smile",
+    popular: false
+  },
+  {
+    id: "smart-tv",
+    name: "TV & Smart Device Setup",
+    category: "smart-home",
+    price: "From $45",
+    rating: 4.8,
+    reviews: 410,
+    description: "Wall mounting, wiring organization, and smart TV OS updates/app integration.",
+    iconName: "Tv",
+    popular: true
+  },
+  {
+    id: "electrician",
+    name: "Electrical Wiring & Installation",
+    category: "repairs",
+    price: "From $45",
+    rating: 4.8,
+    reviews: 1104,
+    description: "Installation of lights, fans, switchboards, and electrical troubleshooting.",
+    iconName: "Zap",
+    popular: true
+  },
+  {
+    id: "hair-styling",
+    name: "Premium Salon for Women",
+    category: "personal-care",
+    price: "From $35",
+    rating: 4.7,
+    reviews: 629,
+    description: "Haircut, styling, blow dry, facial treatments, and premium manicure services.",
+    iconName: "Scissors",
+    popular: false
+  },
+  {
+    id: "lawn-maintenance",
+    name: "Lawn Mowing & Trimming",
+    category: "gardening",
+    price: "From $50",
+    rating: 4.6,
+    reviews: 310,
+    description: "Precision lawn mowing, hedge trimming, weeding, and garden cleanups.",
+    iconName: "Leaf",
+    popular: false
+  }
+];

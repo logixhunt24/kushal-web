@@ -1,0 +1,19 @@
+:root {
+  --primary: #50008C;
+  --primary-light: #6f1ab1;
+  --background: #FCFCFC;
+  --text: #0E0E0E;
+  --white: #ffffff;
+  --gray-50: #fafafa;
+  --gray-100: #f4f4f5;
+  --gray-200: #e4e4e7;
+  --gray-300: #d4d4d8;
+  --gray-400: #a1a1aa;
+  --gray-600: #52525b;
+  --gray-800: #27272a;
+  --shadow-subtle: 0 4px 20px rgba(0,0,0,0.02);
+  --shadow-premium: 0 8px 30px rgba(0,0,0,0.04);
+  --shadow-hover: 0 20px 40px rgba(80,0,140,0.08);
+  --radius: 20px;
+  --container: 1280px;
+}
