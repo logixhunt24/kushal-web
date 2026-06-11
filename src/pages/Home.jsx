@@ -6,7 +6,7 @@ import Navbar from '../components/layout/Navbar';
 
 // Section components
 import Hero from '../components/home/Hero';
-// import Statistics from '../components/home/Statistics';
+import ProfessionalBenefits from '../components/home/ProfessionalBenefits';
 // import Problem from '../components/home/Problem';
 // import Solution from '../components/home/Solution';
 // import Categories from '../components/home/Categories';
@@ -24,9 +24,9 @@ export default function Home() {
     <div className="relative min-h-screen bg-brand-bg text-brand-text">
       <Navbar />
       <main>
-        {/* <Hero /> */}
-        {/* <Statistics />
-        <Problem />
+        <Hero />
+        <ProfessionalBenefits />
+        {/* <Problem />
         <Solution />
         <Categories />
         <Services />
