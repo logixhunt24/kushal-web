@@ -1,19 +1,60 @@
 :root {
-  --primary: #50008C;
-  --primary-light: #6f1ab1;
-  --background: #FCFCFC;
-  --text: #0E0E0E;
-  --white: #ffffff;
-  --gray-50: #fafafa;
-  --gray-100: #f4f4f5;
-  --gray-200: #e4e4e7;
-  --gray-300: #d4d4d8;
-  --gray-400: #a1a1aa;
-  --gray-600: #52525b;
-  --gray-800: #27272a;
-  --shadow-subtle: 0 4px 20px rgba(0,0,0,0.02);
-  --shadow-premium: 0 8px 30px rgba(0,0,0,0.04);
-  --shadow-hover: 0 20px 40px rgba(80,0,140,0.08);
-  --radius: 20px;
-  --container: 1280px;
+  /* Fonts */
+  --kushal-font: "Montserrat", sans-serif;
+  --kushal-heading-font: "Montserrat", sans-serif;
+  --kushal-script-font: "Kaushan Script", cursive;
+
+  /* Brand Colors */
+  --kushal-base: #50008C;
+  --kushal-base-rgb: 80, 0, 140;
+
+  /* Accent Color */
+  --kushal-primary: #F5C835;
+  --kushal-primary-rgb: 245, 200, 53;
+
+  /* Text */
+  --kushal-text: #636363;
+  --kushal-text-rgb: 99, 99, 99;
+
+  --kushal-heading: #0E0E0E;
+  --kushal-heading-rgb: 14, 14, 14;
+
+  /* Whites */
+  --kushal-white: #FFFFFF;
+  --kushal-white2: #FCFCFC;
+  --kushal-white3: #F8F5FC;
+  --kushal-white4: #F1EAFE;
+
+  /* Blacks */
+  --kushal-black: #000000;
+  --kushal-black2: #222222;
+  --kushal-black3: #333333;
+
+  /* Gray */
+  --kushal-gray: #92918F;
+  --kushal-border-color: #DDDDDD;
+
+  /* Shadows */
+  --kushal-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
+  --kushal-shadow-md: 0 8px 30px rgba(0, 0, 0, 0.06);
+  --kushal-shadow-lg: 0 20px 40px rgba(80, 0, 140, 0.08);
+
+  /* Radius */
+  --kushal-radius: 20px;
+
+  /* Layout */
+  --container-width: 1280px;
+  --section-space: 120px;
+
+  /* Transition */
+  --kushal-transition: all 0.3s ease;
+
+   /* Primary Font */
+  --kushal-font: "Montserrat", sans-serif;
+
+  /* Secondary Font */
+  --kushal-secondary-font: "DM Sans", sans-serif;
+
+  /* Logo Font */
+  --kushal-script-font: "Kaushan Script", cursive;
 }
