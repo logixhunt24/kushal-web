@@ -7,6 +7,10 @@ import Navbar from '../components/layout/Navbar';
 // Section components
 import Hero from '../components/home/Hero';
 import ProfessionalBenefits from '../components/home/ProfessionalBenefits';
+import KushalFeaturesSection from '../components/home/KushalFeaturesSection';
+import DownloadCTA from '../components/home/DownloadCTA';
+import BusinessGrowthCTA from '../components/home/BusinessGrowthCTA';
+
 // import Problem from '../components/home/Problem';
 // import Solution from '../components/home/Solution';
 // import Categories from '../components/home/Categories';
@@ -17,7 +21,6 @@ import ProfessionalBenefits from '../components/home/ProfessionalBenefits';
 // import Screenshots from '../components/home/Screenshots';
 // import Testimonials from '../components/home/Testimonials';
 // import FAQ from '../components/home/FAQ';
-// import DownloadCTA from '../components/home/DownloadCTA';
 
 export default function Home() {
   return (
@@ -26,6 +29,9 @@ export default function Home() {
       <main>
         <Hero />
         <ProfessionalBenefits />
+        <KushalFeaturesSection />
+        <DownloadCTA />
+        <BusinessGrowthCTA/>
         {/* <Problem />
         <Solution />
         <Categories />
@@ -36,7 +42,7 @@ export default function Home() {
         <Screenshots />
         <Testimonials />
         <FAQ />
-        <DownloadCTA /> */}
+         */}
       </main>
       {/* <Footer /> */}
     </div>

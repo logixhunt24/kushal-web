@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 import {
   ShieldCheck,
@@ -44,50 +44,57 @@ export default function ProfessionalBenefits() {
     {
       icon: <BadgeDollarSign size={28} className="w-7 h-7" />,
       title: "No Commission Model",
-      description: "Keep 100% of your hard-earned payouts. Absolutely zero platform deduction cuts or surprise fees.",
+      description:
+        "Keep 100% of your hard-earned payouts. Absolutely zero platform deduction cuts or surprise fees.",
     },
     {
       icon: <ShieldCheck size={28} className="w-7 h-7" />,
       title: "Flexible Pricing System",
-      description: "Set your own hourly or project rates and negotiate or scope directly with your clients.",
+      description:
+        "Set your own hourly or project rates and negotiate or scope directly with your clients.",
     },
     {
       icon: <Users size={28} className="w-7 h-7" />,
       title: "Professional Visibility",
-      description: "Secure prioritized organic exposure and secure authentic booking leads from your region.",
+      description:
+        "Secure prioritized organic exposure and secure authentic booking leads from your region.",
     },
     {
       icon: <Sparkles size={28} className="w-7 h-7" />,
       title: "Emerging Young Talent",
-      description: "Showcase your portfolio baseline and start receiving live neighborhood client inquiries instantly.",
+      description:
+        "Showcase your portfolio baseline and start receiving live neighborhood client inquiries instantly.",
     },
   ];
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-28 bg-[var(--kushal-white2)] select-none">
-      
       {/* High-Fidelity Ambient Mesh Backdrop Flares */}
-      <div 
+      <div
         className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none opacity-40"
-        style={{ background: `radial-gradient(circle, rgba(var(--kushal-base-rgb), 0.2) 0%, transparent 70%)` }} 
+        style={{
+          background: `radial-gradient(circle, rgba(var(--kushal-base-rgb), 0.2) 0%, transparent 70%)`,
+        }}
       />
-      <div 
+      <div
         className="absolute bottom-[-10%] right-[-5%] w-[600px] h-[600px] rounded-full blur-[140px] pointer-events-none opacity-50"
-        style={{ background: `radial-gradient(circle, rgba(var(--kushal-primary-rgb), 0.2) 0%, transparent 70%)` }} 
+        style={{
+          background: `radial-gradient(circle, rgba(var(--kushal-primary-rgb), 0.2) 0%, transparent 70%)`,
+        }}
       />
 
       {/* Technical Dot Matrix Pattern */}
       <div
         className="absolute inset-0 opacity-[0.015] pointer-events-none"
         style={{
-          backgroundImage: "radial-gradient(circle at 1px 1px, var(--kushal-base) 1px, transparent 0)",
+          backgroundImage:
+            "radial-gradient(circle at 1px 1px, var(--kushal-base) 1px, transparent 0)",
           backgroundSize: "32px 32px",
         }}
         aria-hidden="true"
       />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
-        
         {/* ========================================================
            SECTION HEADER BLOCK
            ======================================================== */}
@@ -98,43 +105,55 @@ export default function ProfessionalBenefits() {
           variants={basicFadeUp}
           className="max-w-3xl mx-auto text-center mb-16 md:mb-20"
         >
-          <span 
+          <span
             className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5 backdrop-blur-md border transition-transform hover:scale-105"
-            style={{ 
-              background: `rgba(var(--kushal-base-rgb), 0.08)`, 
-              color: 'var(--kushal-base)',
-              borderColor: `rgba(var(--kushal-base-rgb), 0.15)`
+            style={{
+              background: `rgba(var(--kushal-base-rgb), 0.08)`,
+              color: "var(--kushal-base)",
+              borderColor: `rgba(var(--kushal-base-rgb), 0.15)`,
             }}
           >
-            <Sparkles className="w-3.5 h-3.5 animate-pulse" /> Why Professionals Partner With Us
+            <Sparkles className="w-3.5 h-3.5 animate-pulse" /> Why Professionals
+            Partner With Us
           </span>
 
-           <h2
-  className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6"
-  style={{
-    fontFamily: "var(--kushal-font)",
-    color: "var(--kushal-heading)"
-  }}
->
+          <h2
+            className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6"
+            style={{
+              fontFamily: "var(--kushal-font)",
+              color: "var(--kushal-heading)",
+            }}
+          >
             Our Unique Solution for
             <span
-  className="block mt-1 transform -rotate-1 hover:rotate-1 transition-transform duration-300 select-none"
-  style={{
-    color: "var(--kushal-base)",
-    fontFamily: "var(--kushal-script-font)"
-  }}
-> Service Professionals</span>
+              className="block mt-1 transform -rotate-1 hover:rotate-1 transition-transform duration-300 select-none"
+              style={{
+                color: "var(--kushal-base)",
+                fontFamily: "var(--kushal-script-font)",
+              }}
+            >
+              {" "}
+              Service Professionals
+            </span>
           </h2>
 
-          <p className="text-base sm:text-lg leading-relaxed text-neutral-600 font-medium max-w-2xl mx-auto" style={{ fontFamily: 'var(--kushal-secondary-font)', color: 'var(--kushal-text)' }}>
-            Engineered for absolute operational transparency, zero hidden margins, and uncapped local scale. Empowering every vendor with the autonomy they deserve.
+          <p
+            className="text-base sm:text-lg leading-relaxed text-neutral-600 font-medium max-w-2xl mx-auto"
+            style={{
+              fontFamily: "var(--kushal-secondary-font)",
+              color: "var(--kushal-text)",
+            }}
+          >
+            Engineered for absolute operational transparency, zero hidden
+            margins, and uncapped local scale. Empowering every vendor with the
+            autonomy they deserve.
           </p>
         </motion.div>
 
         {/* ========================================================
            BENEFITS CARDS MATRIX GRID
            ======================================================== */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -153,26 +172,41 @@ export default function ProfessionalBenefits() {
 
               <div className="relative z-10">
                 <div className="mb-6 inline-block">
-                  <div 
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-[6deg] shadow-md group-hover:shadow-[0_10px_20px_-5px_rgba(var(--kushal-base-rgb),0.3)]" 
-                    style={{ background: 'var(--kushal-base)', color: 'var(--kushal-white)' }}
+                  <div
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-[6deg] shadow-md group-hover:shadow-[0_10px_20px_-5px_rgba(var(--kushal-base-rgb),0.3)]"
+                    style={{
+                      background: "var(--kushal-base)",
+                      color: "var(--kushal-white)",
+                    }}
                   >
                     {item.icon}
                   </div>
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold tracking-tight mb-3 text-neutral-900" style={{ fontFamily: 'var(--kushal-font)', color: 'var(--kushal-heading)' }}>
+                <h3
+                  className="text-lg sm:text-xl font-bold tracking-tight mb-3 text-neutral-900"
+                  style={{
+                    fontFamily: "var(--kushal-font)",
+                    color: "var(--kushal-heading)",
+                  }}
+                >
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-neutral-500 font-medium" style={{ fontFamily: 'var(--kushal-secondary-font)', color: 'var(--kushal-text)' }}>
+                <p
+                  className="text-sm leading-relaxed text-neutral-500 font-medium"
+                  style={{
+                    fontFamily: "var(--kushal-secondary-font)",
+                    color: "var(--kushal-text)",
+                  }}
+                >
                   {item.description}
                 </p>
               </div>
 
               {/* Index Number Identity Ribbon */}
-              <div 
-                className="absolute bottom-4 right-6 text-6xl font-black opacity-[0.04] group-hover:opacity-[0.09] group-hover:scale-105 transition-all duration-500 pointer-events-none select-none" 
-                style={{ color: 'var(--kushal-base)' }}
+              <div
+                className="absolute bottom-4 right-6 text-6xl font-black opacity-[0.04] group-hover:opacity-[0.09] group-hover:scale-105 transition-all duration-500 pointer-events-none select-none"
+                style={{ color: "var(--kushal-base)" }}
               >
                 0{index + 1}
               </div>
@@ -183,7 +217,7 @@ export default function ProfessionalBenefits() {
         {/* ========================================================
            REALTIME METRIC DATA STRIP
            ======================================================== */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
@@ -196,16 +230,28 @@ export default function ProfessionalBenefits() {
             { value: "100%", label: "Zero Commission" },
             { value: "24/7", label: "Live Support" },
           ].map((stat, i) => (
-            <motion.div 
+            <motion.div
               key={i}
               variants={cardVariants}
               whileHover={{ y: -4 }}
               className="text-center p-5 sm:p-6 rounded-2xl bg-[var(--kushal-white)] border border-neutral-200/40 shadow-xs hover:shadow-md flex flex-col justify-center items-center"
             >
-              <div className="text-2xl sm:text-3xl font-black tracking-tight" style={{ fontFamily: 'var(--kushal-font)', color: 'var(--kushal-heading)' }}>
+              <div
+                className="text-2xl sm:text-3xl font-black tracking-tight"
+                style={{
+                  fontFamily: "var(--kushal-font)",
+                  color: "var(--kushal-heading)",
+                }}
+              >
                 {stat.value}
               </div>
-              <div className="text-xs sm:text-sm font-semibold text-neutral-400 mt-1" style={{ fontFamily: 'var(--kushal-secondary-font)', color: 'var(--kushal-text)' }}>
+              <div
+                className="text-xs sm:text-sm font-semibold text-neutral-400 mt-1"
+                style={{
+                  fontFamily: "var(--kushal-secondary-font)",
+                  color: "var(--kushal-text)",
+                }}
+              >
                 {stat.label}
               </div>
             </motion.div>
@@ -215,42 +261,73 @@ export default function ProfessionalBenefits() {
         {/* ========================================================
            CONVERSION ACTION CTA BANNER BLOCK
            ======================================================== */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
           variants={basicFadeUp}
-          className="relative overflow-hidden rounded-[2rem] p-[1px] shadow-[0_20px_40px_-15px_rgba(var(--kushal-base-rgb),0.2)]" 
-          style={{ background: `linear-gradient(135deg, var(--kushal-base), var(--kushal-primary))` }}
+          className="relative overflow-hidden rounded-[2rem] p-[1px] shadow-[0_20px_40px_-15px_rgba(var(--kushal-base-rgb),0.2)]"
+          style={{
+            background: `linear-gradient(135deg, var(--kushal-base), var(--kushal-primary))`,
+          }}
         >
           <div className="rounded-[1.95rem] px-6 py-10 sm:p-10 lg:p-12 bg-white/95 backdrop-blur-md flex flex-col lg:flex-row items-center justify-between gap-8 relative z-10">
             <div className="text-center lg:text-left max-w-2xl">
-              <div 
-                className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 mb-4 border" 
-                style={{ 
+              <div
+                className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 mb-4 border"
+                style={{
                   background: `rgba(var(--kushal-base-rgb), 0.06)`,
-                  borderColor: `rgba(var(--kushal-base-rgb), 0.1)`
+                  borderColor: `rgba(var(--kushal-base-rgb), 0.1)`,
                 }}
               >
-                <Rocket size={13} className="animate-bounce" style={{ color: 'var(--kushal-base)' }} />
-                <span className="text-[11px] font-bold tracking-wider uppercase" style={{ color: 'var(--kushal-base)' }}>Join Today</span>
+                <Rocket
+                  size={13}
+                  className="animate-bounce"
+                  style={{ color: "var(--kushal-base)" }}
+                />
+                <span
+                  className="text-[11px] font-bold tracking-wider uppercase"
+                  style={{ color: "var(--kushal-base)" }}
+                >
+                  Join Today
+                </span>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-black tracking-tight mb-2.5" style={{ fontFamily: 'var(--kushal-font)', color: 'var(--kushal-heading)' }}>
+              <h3
+                className="text-2xl sm:text-3xl font-black tracking-tight mb-2.5"
+                style={{
+                  fontFamily: "var(--kushal-font)",
+                  color: "var(--kushal-heading)",
+                }}
+              >
                 Empowering Every Local Professional
               </h3>
-              <p className="text-sm sm:text-base text-neutral-500 font-medium leading-relaxed" style={{ fontFamily: 'var(--kushal-secondary-font)', color: 'var(--kushal-text)' }}>
-                From specialized trade veterans to emerging freelance creators, our platform provides equal visibility and direct customer interactions.
+              <p
+                className="text-sm sm:text-base text-neutral-500 font-medium leading-relaxed"
+                style={{
+                  fontFamily: "var(--kushal-secondary-font)",
+                  color: "var(--kushal-text)",
+                }}
+              >
+                From specialized trade veterans to emerging freelance creators,
+                our platform provides equal visibility and direct customer
+                interactions.
               </p>
             </div>
 
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="group shrink-0 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all duration-300 w-full sm:w-auto justify-center" 
-              style={{ background: 'var(--kushal-base)', color: 'var(--kushal-white)' }}
+              className="group shrink-0 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all duration-300 w-full sm:w-auto justify-center"
+              style={{
+                background: "var(--kushal-base)",
+                color: "var(--kushal-white)",
+              }}
             >
               Join as a Professional
-              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform stroke-[2.5]" />
+              <ArrowRight
+                size={16}
+                className="group-hover:translate-x-1 transition-transform stroke-[2.5]"
+              />
             </motion.button>
           </div>
         </motion.div>
@@ -258,7 +335,7 @@ export default function ProfessionalBenefits() {
         {/* ========================================================
            TRUST PARAMETERS BOTTOM CAP
            ======================================================== */}
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -272,16 +349,28 @@ export default function ProfessionalBenefits() {
               { text: "Dedicated Dispatch Support" },
               { text: "Free Registration Period" },
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-1.5 group cursor-default">
-                <CheckCircle size={14} className="transition-transform group-hover:scale-110" style={{ color: 'var(--kushal-base)' }} />
-                <span className="text-xs sm:text-sm font-bold text-neutral-500 group-hover:text-neutral-800 transition-colors" style={{ fontFamily: 'var(--kushal-secondary-font)', color: 'var(--kushal-text)' }}>
+              <div
+                key={i}
+                className="flex items-center gap-1.5 group cursor-default"
+              >
+                <CheckCircle
+                  size={14}
+                  className="transition-transform group-hover:scale-110"
+                  style={{ color: "var(--kushal-base)" }}
+                />
+                <span
+                  className="text-xs sm:text-sm font-bold text-neutral-500 group-hover:text-neutral-800 transition-colors"
+                  style={{
+                    fontFamily: "var(--kushal-secondary-font)",
+                    color: "var(--kushal-text)",
+                  }}
+                >
                   {item.text}
                 </span>
               </div>
             ))}
           </div>
         </motion.div>
-
       </div>
     </section>
   );

@@ -183,7 +183,7 @@ function ScreenCategories() {
       </div>
       <p className="mt-0.5 text-[9.5px] font-medium text-neutral-400">28 certified professionals near you</p>
       <div className="mt-2.5 flex gap-1 overflow-hidden">
-        {["All", "Top Rated", "Nearby", "Offers"].map((t, i) => (
+        {["All", "Top ", "Nearby", "Offers"].map((t, i) => (
           <span key={t} className={`rounded-full px-2.5 py-1 text-[8.5px] font-bold tracking-wide transition-colors cursor-pointer ${i === 0 ? "bg-[#50008C] text-white" : "bg-neutral-50 text-neutral-600 ring-1 ring-neutral-200"}`}>
             {t}
           </span>
@@ -274,7 +274,10 @@ function FloatingCard({ icon: Icon, title, subtitle, className = "", iconClass =
 // ========================================================
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-neutral-50/50 pt-[120px] md:pt-[140px] pb-[80px] font-sans">
+    <section
+      className="relative min-h-screen w-full overflow-hidden  pt-[120px] md:pt-[140px] pb-[80px] font-sans"
+      style={{ backgroundColor: "var(--kushal-white3)" }}
+    >
       <link href={CONFIG.fontCdn} rel="stylesheet" />
 
       {/* Modern Backdrop Ambient Radial Matrix Flares */}
@@ -314,7 +317,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Dynamic Core Typography Header Block */}
-          <motion.h1 variants={heroElementVariants} className="mt-5 text-[40px] sm:text-[44px] md:text-[62px] xl:text-[58px] font-black leading-[1.08] tracking-tight text-neutral-900">
+          <motion.h1 variants={heroElementVariants} className="mt-5 text-[40px] sm:text-[44px] md:text-[62px] xl:text-[50px] font-black leading-[1.08] tracking-tight text-neutral-900">
             Book Trusted Services <br />
             <span className="bg-gradient-to-r from-[#50008C] via-[#9C27B0] to-[#50008C] bg-clip-text text-transparent bg-[size:200%_auto] animate-[pulse_6s_infinite]">
               Anytime, Anywhere
