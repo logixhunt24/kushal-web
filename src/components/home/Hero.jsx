@@ -126,7 +126,7 @@ function PhoneFrame({ children, className = "", animationClass = "" }) {
 
 function ScreenHome() {
   return (
-    <div className="flex h-full flex-col bg-white px-4 pt-8 pb-3 text-left">
+    <div className="flex h-full flex-col bg-white px-4 pt-10 pb-3 text-left">
       <div className="flex items-center justify-between">
         <div>
           <p className="text-[10px] font-medium text-neutral-400">Good Morning 👋</p>
@@ -275,7 +275,7 @@ function FloatingCard({ icon: Icon, title, subtitle, className = "", iconClass =
 export default function Hero() {
   return (
     <section
-      className="relative min-h-screen w-full overflow-hidden  pt-[120px] md:pt-[140px] pb-[80px] font-sans"
+      className="relative min-h-screen w-full overflow-hidden  pt-[120px] md:pt-[200px] pb-[80px] font-sans"
       style={{ backgroundColor: "var(--kushal-white3)" }}
     >
       <link href={CONFIG.fontCdn} rel="stylesheet" />

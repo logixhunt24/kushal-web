@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState('Home');
   const sidebarRef = useRef(null);
   const toggleBtnRef = useRef(null);
 
   const menuItems = ['Home', 'About Us', 'Features', 'Providers', 'Contact Us'];
-
+  const [activeItem, setActiveItem] = useState('Home');
   // Handle clicks outside the sidebar panel to close gracefully
   useEffect(() => {
     function handleClickOutside(event) {
@@ -81,23 +81,37 @@ export default function Navbar() {
 
           {/* Desktop Exclusive Main Horizontal Links Menu (>=1024px) */}
           <ul className="hidden lg:flex items-center gap-1 list-none m-0 p-0">
-            {menuItems.map((item, index) => (
-              <li key={item} className="relative flex items-center">
-                <button
-                  onClick={() => setActiveItem(item)}
-                  className={`text-[15px] font-semibold px-5 py-2.5 rounded-[14px] flex items-center gap-2.5 transition-all duration-300 ease-out outline-none focus-visible:ring-2 focus-visible:ring-[var(--kushal-base)]
-                    ${activeItem === item 
-                      ? 'bg-[var(--kushal-base)] text-[var(--kushal-white)] shadow-[var(--kushal-shadow-sm)]' 
-                      : 'text-[var(--kushal-text)] hover:bg-[var(--kushal-white3)] hover:text-[var(--kushal-base)]'
-                    }`}
+            {(() => {
+              const routeMap = {
+                Home: '/',
+                'About Us': '/about',
+                Features: '/features',
+                Providers: '/providers',
+                'Contact Us': '/contact'
+              };
+              return menuItems.map((item) => (
+                <NavLink
+                  key={item}
+                  to={routeMap[item]}
+                  className={({ isActive }) =>
+                    `text-[15px] font-semibold px-5 py-2.5 rounded-[14px] flex items-center gap-2.5 transition-all duration-300 ease-out outline-none focus-visible:ring-2 focus-visible:ring-[var(--kushal-base)] ${
+                      isActive
+                        ? 'bg-[var(--kushal-base)] text-[var(--kushal-white)] shadow-[var(--kushal-shadow-sm)]'
+                        : 'text-[var(--kushal-text)] hover:bg-[var(--kushal-white3)] hover:text-[var(--kushal-base)]'
+                    }`
+                  }
                 >
-                  <span className='logo-text'>{item}</span>
-                  {index < menuItems.length - 1 && (
-                    <span className={`text-[11px] font-bold pointer-events-none ${activeItem === item ? 'text-[var(--kushal-primary)]' : 'text-[var(--kushal-gray)] opacity-30'}`}>•</span>
+                  {({ isActive }) => (
+                    <>
+                      <span className='logo-text'>{item}</span>
+                      {item !== 'Home' && (
+                        <span className={`text-[11px] font-bold pointer-events-none ${isActive ? 'text-[var(--kushal-primary)]' : 'text-[var(--kushal-gray)] opacity-30'}`}>•</span>
+                      )}
+                    </>
                   )}
-                </button>
-              </li>
-            ))}
+                </NavLink>
+              ));
+            })()}
           </ul>
 
           {/* Right Fixed Interactive Control Interface Cluster */}

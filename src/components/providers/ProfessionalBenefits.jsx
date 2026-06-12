@@ -98,12 +98,13 @@ export default function ProfessionalBenefits() {
               }}
             >
               Grow Your Business Without{" "}
-              <span 
-                className="block mt-1 transform -rotate-1 hover:rotate-1 transition-transform duration-300 select-none"
-                style={{ color: "var(--kushal-base)", fontFamily: "var(--kushal-script-font)" }}
-              >
-                Paying Commission
-              </span>
+             
+              <span
+              className="block mt-1 transform -rotate-1 hover:rotate-1 transition-transform duration-300 select-none"
+              style={{ color: "var(--kushal-base)", fontFamily: "var(--kushal-script-font)" }}
+            >
+              Paying Commission
+            </span>
             </h2> 
 
             {/* Structured Sub-Paragraph */}

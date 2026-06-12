@@ -6,7 +6,7 @@ import {
   QrCode, 
   CheckCircle 
 } from "lucide-react";
-import mockupImg from '../../assets/img/kushalapp_mockup_homescreen.jpeg';
+import mockupImg from '../assets/img/kushalapp_mockup_homescreen.jpeg';
 
 const basicFadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -27,7 +27,11 @@ const imageFloat = {
   },
 };
 
-export default function DownloadCTA() {
+// Added flexible bgColor and cardBgColor props with your theme tokens as fallbacks
+export default function DownloadCTA({ 
+  bgColor = "var(--kushal-white2)", 
+  cardBgColor = "var(--kushal-white)" 
+}) {
   const values = [
     "On-Demand Booking Marketplace",
     "Encrypted Automation Framework",
@@ -35,7 +39,10 @@ export default function DownloadCTA() {
   ];
 
   return (
-    <section className="relative overflow-hidden py-16 sm:py-24 bg-[var(--kushal-white2)] select-none px-4 sm:px-6 lg:px-8">
+    <section 
+      className="relative overflow-hidden py-16 sm:py-24 select-none px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+      style={{ backgroundColor: bgColor }}
+    >
       
       {/* Background Ambient Mesh Flares */}
       <div 
@@ -51,8 +58,8 @@ export default function DownloadCTA() {
         
         {/* Core CTA Card Container */}
         <div 
-          className="relative overflow-hidden rounded-[2.5rem] border border-neutral-200/40 p-8 sm:p-12 lg:p-16 shadow-[0_30px_70px_-20px_rgba(var(--kushal-base-rgb),0.1)]"
-          style={{ backgroundColor: 'var(--kushal-white)' }}
+          className="relative overflow-hidden rounded-[2.5rem] border border-neutral-200/40 p-8 sm:p-12 lg:p-16 shadow-[0_30px_70px_-20px_rgba(var(--kushal-base-rgb),0.1)] transition-colors duration-300"
+          style={{ backgroundColor: cardBgColor }}
         >
           {/* Subtle inside gradient background */}
           <div className="absolute inset-0 bg-gradient-to-tr from-neutral-50/50 via-transparent to-transparent pointer-events-none" />
@@ -86,9 +93,9 @@ export default function DownloadCTA() {
                 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl tracking-tight mb-6 leading-[1.1]"
                 style={{ fontFamily: 'var(--kushal-font)', color: 'var(--kushal-heading)' }}
               >
-                Download the 
+                Download the{" "}
                 <span 
-                  className="block mt-1 transform -rotate-0.5 hover:rotate-0.5 transition-transform duration-300 select-none"
+                  className="block mt-1 transform -rotate-1 hover:rotate-1 transition-transform duration-300 select-none"
                   style={{ color: 'var(--kushal-base)', fontFamily: 'var(--kushal-script-font)' }}
                 >
                   KushalApp Now!

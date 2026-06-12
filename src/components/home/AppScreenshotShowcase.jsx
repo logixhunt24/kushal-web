@@ -43,7 +43,7 @@ export default function AppScreenshotShowcase() {
     <section 
       className="relative overflow-hidden w-full select-none"
       style={{ 
-        backgroundColor: 'var(--kushal-white3)',
+        backgroundColor: 'var(--kushal-white2)',
         paddingTop: 'var(--section-space)',
         paddingBottom: 'var(--section-space)',
         fontFamily: 'var(--kushal-font)'
