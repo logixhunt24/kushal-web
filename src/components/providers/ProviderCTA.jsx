@@ -23,7 +23,7 @@ export default function ProviderCTA() {
             borderColor: "var(--kushal-border-color)",
           }}
         >
-          {/* Pill Tag - Matches ProfessionalBenefits style */}
+          {}
           <span
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-8 border backdrop-blur-md"
             style={{
@@ -35,7 +35,7 @@ export default function ProviderCTA() {
             <Sparkles size={13} className="animate-pulse" /> Launch Your Career
           </span>
 
-          {/* Headline */}
+          {}
           <h2
             className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-8"
             style={{
@@ -55,7 +55,7 @@ export default function ProviderCTA() {
             </span>
           </h2>
 
-          {/* Subtext */}
+          {}
           <p
             className="text-base sm:text-lg leading-relaxed font-medium  mx-auto mb-12"
             style={{
@@ -68,7 +68,7 @@ export default function ProviderCTA() {
             deductions.
           </p>
 
-          {/* Action Row */}
+          {}
           <div className="flex flex-col items-center gap-8">
             <motion.a
               href="https://play.google.com/store/apps/details?id=com.kushalapp.partner&pcampaignid=web_share"
@@ -84,7 +84,7 @@ export default function ProviderCTA() {
               <Download size={20} /> Download Provider App
             </motion.a>
 
-            {/* Trust Tags */}
+            {}
             <div
               className="flex flex-wrap justify-center gap-6 text-[11px] font-bold uppercase tracking-wider"
               style={{ color: "var(--kushal-text)" }}

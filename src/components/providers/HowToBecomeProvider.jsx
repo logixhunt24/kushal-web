@@ -37,7 +37,7 @@ export default function HowToBecomeProvider() {
       }}
     >
       <div className="relative z-10 max-w-[var(--container-width)] mx-auto">
-        {/* Header */}
+        {}
         <div className="text-center mb-16">
           <span
             className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-6 border backdrop-blur-md"
@@ -69,7 +69,7 @@ export default function HowToBecomeProvider() {
           </h2>
         </div>
 
-        {/* Steps Grid */}
+        {}
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((item, i) => {
             const Icon = item.icon;
@@ -86,7 +86,7 @@ export default function HowToBecomeProvider() {
                   borderColor: "var(--kushal-border-color)",
                 }}
               >
-                {/* Step Number */}
+                {}
                 <span
                   className="text-5xl font-black opacity-10 mb-4 block"
                   style={{ color: "var(--kushal-base)" }}
@@ -94,7 +94,7 @@ export default function HowToBecomeProvider() {
                   {item.step}
                 </span>
 
-                {/* Icon */}
+                {}
                 <div
                   className="w-12 h-12 flex items-center justify-center mb-6 rounded-xl"
                   style={{
@@ -105,7 +105,7 @@ export default function HowToBecomeProvider() {
                   <Icon size={24} />
                 </div>
 
-                {/* Text */}
+                {}
                 <h3
                   className="text-xl font-bold mb-3"
                   style={{ color: "var(--kushal-heading)" }}

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { QRCodeSVG } from "qrcode.react"; // Import the generator
+import { QRCodeSVG } from "qrcode.react";
 import { Smartphone, Download, CheckCircle } from "lucide-react";
 import mockupImg from "../assets/img/kushalapp_mockup_homescreen.jpeg";
 
@@ -33,7 +33,6 @@ export default function DownloadCTA({
     "Real-Time Provider Live Tracking",
   ];
 
-  // Isolated target download url string
   const playStoreUrl =
     "https://play.google.com/store/apps/details?id=com.kushal.app&pcampaignid=web_share";
 
@@ -42,7 +41,7 @@ export default function DownloadCTA({
       className="relative overflow-hidden py-16 sm:py-24 select-none px-4 sm:px-6 lg:px-8 transition-colors duration-300"
       style={{ backgroundColor: bgColor }}
     >
-      {/* Background Ambient Mesh Flares */}
+      {}
       <div
         className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full blur-[130px] pointer-events-none opacity-30"
         style={{
@@ -57,18 +56,16 @@ export default function DownloadCTA({
       />
 
       <div className="relative z-10 mx-auto w-full max-w-[1280px]">
-        {/* Core CTA Card Container */}
+        {}
         <div
           className="relative overflow-hidden rounded-[2.5rem] border border-neutral-200/40 p-8 sm:p-12 lg:p-16 shadow-[0_30px_70px_-20px_rgba(var(--kushal-base-rgb),0.1)] transition-colors duration-300"
           style={{ backgroundColor: cardBgColor }}
         >
-          {/* Subtle inside gradient background */}
+          {}
           <div className="absolute inset-0 bg-gradient-to-tr from-neutral-50/50 via-transparent to-transparent pointer-events-none" />
 
           <div className="relative z-10 grid gap-12 lg:grid-cols-12 items-center">
-            {/* ========================================================
-               LEFT BLOCK: APP VALUE PROPOSITION & DOWNLOADS
-               ======================================================== */}
+            {}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -76,7 +73,7 @@ export default function DownloadCTA({
               variants={basicFadeUp}
               className="lg:col-span-7 text-center lg:text-left"
             >
-              {/* Pill Tag */}
+              {}
               <span
                 className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-6 border backdrop-blur-md"
                 style={{
@@ -89,7 +86,7 @@ export default function DownloadCTA({
                 Experience Available
               </span>
 
-              {/* Headline Block */}
+              {}
               <h2
                 className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl tracking-tight mb-6 leading-[1.1]"
                 style={{
@@ -109,7 +106,7 @@ export default function DownloadCTA({
                 </span>
               </h2>
 
-              {/* Sub-Paragraph */}
+              {}
               <p
                 className="text-base sm:text-lg leading-relaxed text-neutral-500 font-medium max-w-xl mx-auto lg:mx-0 mb-8"
                 style={{
@@ -123,7 +120,7 @@ export default function DownloadCTA({
                 professionals.
               </p>
 
-              {/* Checked Value Parameters Stack */}
+              {}
               <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-y-3 gap-x-5 mb-10 text-neutral-600 font-semibold text-xs sm:text-sm">
                 {values.map((text, idx) => (
                   <div
@@ -144,7 +141,7 @@ export default function DownloadCTA({
                 ))}
               </div>
 
-              {/* Interactive Multi-Platform Store Buttons */}
+              {}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <motion.a
                   href={playStoreUrl}
@@ -167,9 +164,7 @@ export default function DownloadCTA({
               </div>
             </motion.div>
 
-            {/* ========================================================
-               RIGHT BLOCK: PREMIUM DEVICE SHELL & MOCKUP IMAGE
-               ======================================================== */}
+            {}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -177,20 +172,20 @@ export default function DownloadCTA({
               variants={imageFloat}
               className="lg:col-span-5 relative flex flex-col items-center justify-center pt-4"
             >
-              {/* Backing decorative graphic design rings */}
+              {}
               <div className="absolute w-80 h-80 border border-neutral-100 rounded-full -z-10 animate-[spin_60s_linear_infinite]" />
               <div className="absolute w-96 h-96 border border-dashed border-neutral-200/40 rounded-full -z-10" />
 
-              {/* Realistic High-Fidelity Smartphone Shell */}
+              {}
               <div className="relative w-[250px] h-[520px] bg-neutral-950 rounded-[3rem] p-2.5 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] border-[5px] border-neutral-800 ring-1 ring-neutral-700/50">
-                {/* Dynamic Island / Hardware Notch Element */}
+                {}
                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-20 h-4.5 bg-neutral-950 rounded-full z-30 flex items-center justify-center border border-neutral-900/40">
                   <div className="w-2.5 h-2.5 rounded-full bg-neutral-900/80 ml-auto mr-2" />
                 </div>
 
-                {/* Screen Content Wrapper with Subtle Inner Shadow & Glass Reflection Overlay */}
+                {}
                 <div className="w-full h-full rounded-[2.6rem] overflow-hidden relative z-20 bg-neutral-900 shadow-inner">
-                  {/* Glass Reflection Overlay Streak */}
+                  {}
                   <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none z-20" />
 
                   <img
@@ -201,7 +196,7 @@ export default function DownloadCTA({
                 </div>
               </div>
 
-              {/* Floating Ambient QR Desktop Quick Link Code */}
+              {}
               <div
                 className="hidden xl:flex absolute bottom-4 right-[-30px] p-3.5 border border-neutral-200/50 rounded-2xl shadow-xl flex-col items-center gap-1.5 backdrop-blur-md transition-transform hover:scale-105"
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.96)" }}
@@ -210,7 +205,7 @@ export default function DownloadCTA({
                   className="p-2 rounded-xl flex items-center justify-center border border-neutral-100"
                   style={{ backgroundColor: "var(--kushal-white3)" }}
                 >
-                  {/* Rendered fully functional scalar QR tracking code */}
+                  {}
                   <QRCodeSVG
                     value={playStoreUrl}
                     size={80}

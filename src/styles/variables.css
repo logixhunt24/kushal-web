@@ -1,60 +1,46 @@
 :root {
-  /* Fonts */
   --kushal-font: "Montserrat", sans-serif;
   --kushal-heading-font: "Montserrat", sans-serif;
   --kushal-script-font: "Kaushan Script", cursive;
 
-  /* Brand Colors */
   --kushal-base: #50008c;
   --kushal-base-rgb: 80, 0, 140;
 
-  /* Accent Color */
   --kushal-primary: #f5c835;
   --kushal-primary-rgb: 245, 200, 53;
 
-  /* Text */
   --kushal-text: #636363;
   --kushal-text-rgb: 99, 99, 99;
 
   --kushal-heading: #0e0e0e;
   --kushal-heading-rgb: 14, 14, 14;
 
-  /* Whites */
   --kushal-white: #ffffff;
   --kushal-white2: #fcfcfc;
   --kushal-white3: #f1ebf9;
   --kushal-white4: #f1eafe;
 
-  /* Blacks */
   --kushal-black: #000000;
   --kushal-black2: #222222;
   --kushal-black3: #333333;
 
-  /* Gray */
   --kushal-gray: #92918f;
   --kushal-border-color: #dddddd;
 
-  /* Shadows */
   --kushal-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
   --kushal-shadow-md: 0 8px 30px rgba(0, 0, 0, 0.06);
   --kushal-shadow-lg: 0 20px 40px rgba(80, 0, 140, 0.08);
 
-  /* Radius */
   --kushal-radius: 20px;
 
-  /* Layout */
   --container-width: 1280px;
   --section-space: 120px;
 
-  /* Transition */
   --kushal-transition: all 0.3s ease;
 
-  /* Primary Font */
   --kushal-font: "Montserrat", sans-serif;
 
-  /* Secondary Font */
   --kushal-secondary-font: "DM Sans", sans-serif;
 
-  /* Logo Font */
   --kushal-script-font: "Kaushan Script", cursive;
 }

@@ -93,7 +93,7 @@ export default function KushalFeatures() {
         fontFamily: "var(--kushal-font)",
       }}
     >
-      {/* Dynamic Ambient Background Elements */}
+      {}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <motion.div
           animate={{ x: [0, 20, 0], y: [0, -20, 0] }}
@@ -122,9 +122,7 @@ export default function KushalFeatures() {
         className="relative z-10 mx-auto w-full"
         style={{ maxWidth: "var(--container-width)" }}
       >
-        {/* ========================================================
-           CENTERED HEADER CONTENT ROW (MATCHED LAYOUT STYLE)
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -132,7 +130,7 @@ export default function KushalFeatures() {
           variants={textFadeUpVariants}
           className="max-w-3xl mx-auto text-center mb-16 md:mb-20"
         >
-          {/* Tag Badge Pill */}
+          {}
           <span
             className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5 backdrop-blur-md border transition-transform hover:scale-105"
             style={{
@@ -145,7 +143,7 @@ export default function KushalFeatures() {
             {CONFIG.badge}
           </span>
 
-          {/* Unified Title Block with Script Subtitle Variable Accent */}
+          {}
           <h2
             className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6"
             style={{
@@ -165,7 +163,7 @@ export default function KushalFeatures() {
             </span>
           </h2>
 
-          {/* Centered Descriptive Blurb */}
+          {}
           <p
             className="text-base sm:text-lg leading-relaxed font-medium max-w-2xl mx-auto"
             style={{
@@ -177,9 +175,7 @@ export default function KushalFeatures() {
           </p>
         </motion.div>
 
-        {/* ========================================================
-           RESPONSIVE FEATURES GRID FLOW
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -206,7 +202,7 @@ export default function KushalFeatures() {
                   boxShadow: "var(--kushal-shadow-sm)",
                 }}
               >
-                {/* Dynamic Vector Gradient Accent */}
+                {}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}
                 />
@@ -260,7 +256,7 @@ export default function KushalFeatures() {
                   </p>
                 </div>
 
-                {/* Accent Animation Bar */}
+                {}
                 <div className="w-full h-[3px] bg-neutral-100 rounded-full mt-6 overflow-hidden relative z-10">
                   <div
                     className="h-full w-0 group-hover:w-full transition-all duration-300 ease-out rounded-full"

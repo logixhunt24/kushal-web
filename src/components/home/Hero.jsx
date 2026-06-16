@@ -21,9 +21,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-// ========================================================
-// DESIGN SYSTEM CONSTANTS & APPLICATION VARIABLES
-// ========================================================
 const CONFIG = {
   appName: "KushalApp",
   fontCdn:
@@ -74,9 +71,6 @@ const BEAUTY_SERVICES = [
   { name: "Premium Nail Artist", price: "₹399", rating: "4.7" },
 ];
 
-// ========================================================
-// FRAMER MOTION ORCHESTRATION TIMELINES
-// ========================================================
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -121,9 +115,6 @@ const floatingCardVariants = {
   },
 };
 
-// ========================================================
-// SUB-COMPONENTS & VIEWPORTS
-// ========================================================
 function PhoneFrame({ children, className = "", animationClass = "" }) {
   return (
     <div
@@ -351,9 +342,6 @@ function FloatingCard({
   );
 }
 
-// ========================================================
-// PRIMARY CORE HERO EXPORT
-// ========================================================
 export default function Hero() {
   return (
     <section
@@ -362,13 +350,13 @@ export default function Hero() {
     >
       <link href={CONFIG.fontCdn} rel="stylesheet" />
 
-      {/* Modern Backdrop Ambient Radial Matrix Flares */}
+      {}
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-40 -left-40 h-[600px] w-[600px] rounded-full bg-[#50008C]/10 blur-[130px] animate-[pulse_10s_infinite_alternate]" />
         <div className="absolute top-1/4 -right-40 h-[550px] w-[550px] rounded-full bg-amber-400/10 blur-[140px] animate-[pulse_8s_infinite_alternate_2s]" />
         <div className="absolute -bottom-20 left-1/4 h-[450px] w-[450px] rounded-full bg-purple-500/5 blur-[110px]" />
 
-        {/* Fine Linear Technical Grid Overlay */}
+        {}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -381,16 +369,14 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto grid w-full max-w-[1280px] grid-cols-1 items-center gap-[50px] lg:gap-[40px] xl:gap-[80px] px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:px-10">
-        {/* ========================================================
-           LEFT WORKSPACE: CONTENT ACCUMULATORS (STAGGERED LOAD)
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           animate="visible"
           variants={containerVariants}
           className="relative text-left flex flex-col items-start z-20 max-w-2xl lg:max-w-none mx-auto lg:mx-0"
         >
-          {/* Tag Badge Capsule */}
+          {}
           <motion.div
             variants={heroElementVariants}
             className="inline-flex items-center gap-2 rounded-full border border-purple-200/60 bg-purple-50/80 px-4 py-1.5 shadow-xs backdrop-blur-xs transition-transform hover:scale-105 cursor-default"
@@ -401,7 +387,7 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          {/* Dynamic Core Typography Header Block */}
+          {}
           <motion.h1
             variants={heroElementVariants}
             className="mt-5 text-[40px] sm:text-[44px] md:text-[62px] xl:text-[50px] font-black leading-[1.08] tracking-tight text-neutral-900"
@@ -422,7 +408,7 @@ export default function Hero() {
             </span>
           </motion.h1>
 
-          {/* Descriptive Slat */}
+          {}
           <motion.p
             variants={heroElementVariants}
             className="mt-6 max-w-lg text-[15px] sm:text-[16px] md:text-[17px] leading-relaxed text-neutral-600 font-medium"
@@ -432,7 +418,7 @@ export default function Hero() {
             one powerful, safe, and ultra-responsive ecosystem.
           </motion.p>
 
-          {/* Store CTAs Buttons Panel */}
+          {}
           <motion.div
             variants={heroElementVariants}
             className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto"
@@ -464,7 +450,7 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Secure Trust Parameter Inline Slat */}
+          {}
           <motion.div
             variants={heroElementVariants}
             className="mt-8 flex flex-wrap gap-x-5 gap-y-2.5 border-t border-neutral-200/60 pt-6 w-full"
@@ -481,7 +467,7 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          {/* Trust Metrics Complex Container */}
+          {}
           <motion.div
             variants={heroElementVariants}
             className="mt-8 flex items-center gap-3 bg-white/40 backdrop-blur-xs p-2 rounded-2xl ring-1 ring-neutral-200/40"
@@ -517,19 +503,17 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* ========================================================
-           RIGHT INTERLOCK VIEWPORT SHOWCASE: TRIPLE MOCKUPS (ONLOAD SPLIT)
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           animate="visible"
           variants={phoneContainerVariants}
           className="relative mx-auto flex h-[490px] min-[400px]:h-[540px] md:h-[580px] w-full max-w-[500px] sm:max-w-[560px] lg:max-w-none items-center justify-center mt-6 lg:mt-0 px-2"
         >
-          {/* Radial Technical Lighting Glow */}
+          {}
           <div className="absolute left-1/2 top-1/2 h-[380px] w-[380px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#50008C]/20 via-purple-400/10 to-amber-300/15 blur-3xl pointer-events-none" />
 
-          {/* Device Module A - Left-leaning Category Deck */}
+          {}
           <motion.div
             variants={phoneVariants(-9, "-50%")}
             className="absolute left-0 min-[400px]:left-2 sm:left-6 top-1/2 origin-center z-10"
@@ -542,7 +526,7 @@ export default function Hero() {
             </PhoneFrame>
           </motion.div>
 
-          {/* Device Module B - Right-leaning Live Status View */}
+          {}
           <motion.div
             variants={phoneVariants(9, "-50%")}
             className="absolute right-0 min-[400px]:right-2 sm:right-6 top-1/2 origin-center z-10"
@@ -555,7 +539,7 @@ export default function Hero() {
             </PhoneFrame>
           </motion.div>
 
-          {/* Device Module C - Center-staged Application Viewport */}
+          {}
           <motion.div
             variants={phoneVariants(0, "-50%")}
             className="absolute left-1/2 top-1/2 -translate-x-1/2 z-20 transform scale-[0.92] sm:scale-[1]"
@@ -565,7 +549,7 @@ export default function Hero() {
             </PhoneFrame>
           </motion.div>
 
-          {/* Overlay Glassmorphic Metric Tags */}
+          {}
           <FloatingCard
             icon={Users}
             title="500+ Experts"
@@ -596,7 +580,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Global CSS Inject Layer for Hardware Floating Animations */}
+      {}
       <style
         dangerouslySetInnerHTML={{
           __html: `

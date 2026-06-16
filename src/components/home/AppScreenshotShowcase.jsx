@@ -16,7 +16,6 @@ import mockupImg3 from "../../assets/img/kushalapp_mockup_splashscreen2.jpeg";
 import mockupImg4 from "../../assets/img/kushalapp_mockup_splashscreen3.jpeg";
 
 const CONFIG = {
-  // 2. ASSIGN THE IMPORTED VARIABLE TO YOUR SCREENS
   screens: [
     { id: 1, img: mockupImg },
     { id: 2, img: mockupImg1 },
@@ -53,7 +52,7 @@ export default function AppScreenshotShowcase() {
         fontFamily: "var(--kushal-font)",
       }}
     >
-      {/* Ambient Background Blur Elements */}
+      {}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <div
           className="absolute top-[-10%] left-[10%] w-[500px] h-[500px] rounded-full blur-[130px] opacity-25"
@@ -70,9 +69,7 @@ export default function AppScreenshotShowcase() {
       </div>
 
       <div className="relative z-10 w-full">
-        {/* ========================================================
-           HEADER CONTENT ROW
-           ======================================================== */}
+        {}
         <div
           className="px-4 sm:px-6 lg:px-8 mx-auto"
           style={{ maxWidth: "var(--container-width)" }}
@@ -128,9 +125,7 @@ export default function AppScreenshotShowcase() {
           </motion.div>
         </div>
 
-        {/* ========================================================
-           AUTOMATIC LOOPING CAROUSEL WITH LOCAL IMAGES
-           ======================================================== */}
+        {}
         <div className="relative w-full overflow-hidden py-6 flex before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-20 before:bg-gradient-to-r before:from-[var(--kushal-white3)] before:to-transparent after:absolute after:right-0 after:top-0 after:z-20 after:h-full after:w-20 after:bg-gradient-to-l after:from-[var(--kushal-white3)] after:to-transparent">
           <motion.div
             className="flex gap-6 shrink-0 px-4"
@@ -151,44 +146,37 @@ export default function AppScreenshotShowcase() {
                   boxShadow: "0 25px 50px -12px rgba(0,0,0,0.15)",
                 }}
               >
-                {/* Mobile Phone Ear Speaker Notch */}
+                {}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-4 w-28 bg-neutral-900 rounded-b-xl z-30 flex items-center justify-center">
                   <div className="w-8 h-1 bg-neutral-800 rounded-full mb-1" />
                 </div>
 
-                {/* Main Screenshot Window Container */}
+                {}
                 <div
                   className="relative w-full h-full overflow-hidden flex flex-col justify-between p-5 bg-neutral-800 text-white"
                   style={{ borderRadius: "26px" }}
                 >
-                  {/* 2. LOCAL SCREENSHOT IMAGE USED HERE */}
+                  {}
                   <img
                     src={screen.img}
                     alt={screen.label}
                     className="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => {
-                      // Fallback visual layout if image fails to load or path is incorrect
                       e.target.style.display = "none";
                     }}
                   />
 
-                  {/* Mock Status Bar - Placed safely over image layout */}
-                  {/* <div className="flex justify-between items-center text-[10px] font-bold opacity-90 z-10 bg-neutral-900/10 backdrop-blur-xs px-2 py-0.5 rounded-full">
-                    <span>9:41</span>
-                    <div className="flex items-center gap-1">
-                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
-                      <span>5G</span>
-                    </div>
-                  </div> */}
+                  {}
+                  {}
 
-                  {/* Fallback Text: Only visible if image fails or path is completely empty */}
+                  {}
                   <div className="my-auto flex flex-col items-center text-center px-2 z-5 opacity-40 pointer-events-none">
                     <h4 className="text-sm font-bold tracking-tight">
                       {screen.label}
                     </h4>
                   </div>
 
-                  {/* Glass Glossy Overlay Flare Reflection */}
+                  {}
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 pointer-events-none z-10" />
                 </div>
               </div>
@@ -196,9 +184,7 @@ export default function AppScreenshotShowcase() {
           </motion.div>
         </div>
 
-        {/* ========================================================
-           BOTTOM FEATURES INFO ANCHOR BAR
-           ======================================================== */}
+        {}
         <div
           className="px-4 sm:px-6 lg:px-8 mx-auto mt-10"
           style={{ maxWidth: "var(--container-width)" }}

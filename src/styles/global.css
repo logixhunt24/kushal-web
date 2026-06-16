@@ -14,7 +14,7 @@ body {
   background: var(--kushal-white2);
   overflow-x: hidden;
 }
-/* Headings */
+
 h1,
 h2,
 h3,
@@ -26,7 +26,6 @@ h6 {
   color: var(--kushal-heading);
 }
 
-/* Navigation */
 nav,
 .nav-link,
 .menu-link,
@@ -37,7 +36,6 @@ button,
   font-weight: 600;
 }
 
-/* Body Content */
 body,
 p,
 span,
@@ -50,7 +48,6 @@ label {
   font-family: var(--kushal-secondary-font);
 }
 
-/* Logo */
 .logo-text,
 .brand-name {
   font-family: var(--kushal-script-font);

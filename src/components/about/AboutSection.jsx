@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, ShieldCheck, Tag, Zap } from "lucide-react";
-import teamImg from "../../assets/img/kushalapp_team.png"; // Update path
+import teamImg from "../../assets/img/kushalapp_team.png";
 
 const features = [
   {
@@ -31,7 +31,7 @@ export default function AboutSection() {
         paddingBottom: "var(--section-space)",
       }}
     >
-      {/* Decorative background blobs */}
+      {}
       <div
         className="absolute -top-32 -left-32 w-96 h-96 rounded-full pointer-events-none"
         style={{ backgroundColor: "rgba(var(--kushal-base-rgb), 0.06)" }}
@@ -46,7 +46,7 @@ export default function AboutSection() {
         style={{ maxWidth: "var(--container-width)" }}
       >
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left: Visual/Image Side */}
+          {}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -60,10 +60,10 @@ export default function AboutSection() {
                 alt="KushalApp Team"
                 className="w-full h-[340px] sm:h-[420px] lg:h-[500px] object-cover"
               />
-              {/* Overlay Gradient */}
+              {}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
-              {/* Caption on image */}
+              {}
               <div className="absolute bottom-5 left-5 right-5 z-10">
                 <p className="text-white font-bold text-sm sm:text-base tracking-wide">
                   Trusted by thousands across the country
@@ -71,13 +71,13 @@ export default function AboutSection() {
               </div>
             </div>
 
-            {/* Decorative ring */}
+            {}
             <div
               className="absolute -top-6 -left-6 w-24 h-24 rounded-full border-2 border-dashed opacity-40 hidden sm:block"
               style={{ borderColor: "var(--kushal-base)" }}
             />
 
-            {/* Floating mini badge */}
+            {}
             <motion.div
               initial={{ y: -10, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -112,7 +112,7 @@ export default function AboutSection() {
             </motion.div>
           </motion.div>
 
-          {/* Right: Narrative Side */}
+          {}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -165,7 +165,7 @@ export default function AboutSection() {
               community where trust is the primary currency.
             </p>
 
-            {/* Feature cards */}
+            {}
             <div className="grid sm:grid-cols-3 gap-4">
               {features.map((feature, i) => (
                 <motion.div

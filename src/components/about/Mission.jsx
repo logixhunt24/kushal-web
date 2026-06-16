@@ -76,7 +76,7 @@ export default function AboutUs() {
         className="relative z-10 mx-auto w-full"
         style={{ maxWidth: "var(--container-width)" }}
       >
-        {/* Header Section - Matches your style */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -127,7 +127,7 @@ export default function AboutUs() {
           </p>
         </motion.div>
 
-        {/* Feature Grid - Re-purposed for Mission Pillars */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -155,7 +155,11 @@ export default function AboutUs() {
                 }}
               >
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
+                style={{
+                  
+                  borderRadius: "var(--kushal-radius)",
+                }}
+                  className={`absolute inset-0 bg-gradient-to-br ${card.gradient}  opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                 />
                 <div className="relative z-10">
                   <div

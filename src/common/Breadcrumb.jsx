@@ -37,7 +37,7 @@ const Breadcrumb = () => {
   const pageTitle = terminalSegment
     .replace(/-/g, " ")
     .replace(/\b\w/g, (c) => c.toUpperCase());
-  // Map pathname to background image
+
   const bgMap = {
     "/": homeBg,
     "/about": teamBg,
@@ -63,30 +63,26 @@ const Breadcrumb = () => {
       className="relative overflow-hidden w-full pt-50 pb-34 select-none px-4 flex flex-col items-center justify-center border-b z-10"
       style={{ borderColor: "var(--kushal-border-color)" }}
     >
-      {/* ========================================================
-          BACKGROUND LAYER STACK
-          ======================================================== */}
+      {}
       <div className="absolute inset-0 pointer-events-none z-0">
-        {/* 1. Base Color */}
+        {}
         <div
           className="absolute inset-0 z-0"
           style={{ backgroundColor: "var(--kushal-white2)" }}
         />
 
-        {/* 2. Image */}
+        {}
         <img
           src={bgImage}
           alt="Background Texture"
           className="w-full h-full object-cover absolute inset-0 z-1"
         />
 
-        {/* 3. NEW: Dark Overlay */}
+        {}
         <div className="absolute inset-0 bg-black opacity-60 z-2" />
       </div>
 
-      {/* ========================================================
-          CONTENT
-          ======================================================== */}
+      {}
       <div
         className="relative z-10 w-full flex flex-col items-center text-center"
         style={{ maxWidth: "var(--container-width)" }}
@@ -100,7 +96,7 @@ const Breadcrumb = () => {
           <span style={{ color: "var(--kushal-primary)" }}>.</span>
         </motion.h1>
 
-        {/* Updated Nav Pill for Dark Theme */}
+        {}
         <motion.div
           variants={itemVariants}
           className="inline-flex items-center justify-center p-2 border border-white/10 bg-black/30 backdrop-blur-md max-w-full overflow-x-auto no-scrollbar"

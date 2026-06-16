@@ -6,20 +6,16 @@
 @import "./styles/global.css";
 
 @theme {
-  /* Colors */
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-brand-bg: var(--background);
   --color-brand-text: var(--text);
 
-  /* Fonts */
   --font-primary: "Montserrat", sans-serif;
   --font-secondary: "DM Sans", sans-serif;
   --font-script: "Kaushan Script", cursive;
 
-  /* Radius */
   --radius-brand: var(--radius);
 
-  /* Shadow */
   --shadow-brand: var(--shadow);
 }

@@ -10,16 +10,14 @@ export default function Navbar() {
   const menuItems = ["Home", "About Us", "Features", "Providers", "Contact Us"];
   const [activeItem, setActiveItem] = useState("Home");
 
-  // Centralized URLs for easy management without touching the JSX structure below
   const socialLinks = {
     facebook: "https://www.facebook.com/profile.php?id=61587933372141",
     instagram:
       "https://www.instagram.com/kushalserviceapp?igsh=MWZlc2Q0YTdxZnpxOA%3D%3D&utm_source=qr",
-    // linkedin: 'https://linkedin.com/company/yourcompany',
+
     youtube: "https://www.youtube.com/@Kushal_App",
   };
 
-  // Handle clicks outside the sidebar panel to close gracefully
   useEffect(() => {
     function handleClickOutside(event) {
       if (
@@ -36,7 +34,6 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
-  // Accessibility: Handle Escape key down events to drop panel focus
   useEffect(() => {
     function handleKeyDown(event) {
       if (event.key === "Escape" && isOpen) {
@@ -48,7 +45,6 @@ export default function Navbar() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [isOpen]);
 
-  // Smooth UI Context Layering: Lock structural body scroll without shifting layouts
   useEffect(() => {
     if (isOpen) {
       const scrollbarWidth =
@@ -79,9 +75,9 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 pt-6 pb-3 font-['Montserrat',sans-serif]">
       <div className="w-full max-w-[1480px] mx-auto px-5 md:px-8 lg:px-10">
-        {/* Main Floating Navigation Bar Strip */}
+        {}
         <nav className="bg-[var(--kushal-white)] rounded-[var(--kushal-radius)] shadow-[var(--kushal-shadow-md)] flex items-center justify-between px-6 h-20 relative transition-all duration-300 border border-[var(--kushal-border-color)]">
-          {/* High-End Branding Frame with Public Image Logo */}
+          {}
           <a
             href="/"
             className="group flex items-center h-15 select-none outline-none focus-visible:ring-2 focus-visible:ring-[var(--kushal-base)] rounded-xl transition-transform duration-200 active:scale-98"
@@ -94,7 +90,7 @@ export default function Navbar() {
             />
           </a>
 
-          {/* Desktop Exclusive Main Horizontal Links Menu (>=1024px) */}
+          {}
           <ul className="hidden lg:flex items-center gap-1 list-none m-0 p-0">
             {(() => {
               const routeMap = {
@@ -136,7 +132,7 @@ export default function Navbar() {
             })()}
           </ul>
 
-          {/* Right Fixed Interactive Control Interface Cluster */}
+          {}
           <div className="flex items-center gap-4">
             <a
               href="https://play.google.com/store/apps/details?id=com.kushal.app&pcampaignid=web_share"
@@ -146,7 +142,7 @@ export default function Navbar() {
               Download App
             </a>
 
-            {/* Stable Hamburger Control Target (Never transforms or flies away) */}
+            {}
             <button
               ref={toggleBtnRef}
               onClick={() => setIsOpen(true)}
@@ -162,14 +158,14 @@ export default function Navbar() {
           </div>
         </nav>
 
-        {/* Global Structural Backdrop Layer (With Blur Animation) */}
+        {}
         <div
           className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[100] transition-opacity duration-300 ease-in-out
             ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
           onClick={() => setIsOpen(false)}
         />
 
-        {/* Premium Offcanvas Brand Panel Sidebar Frame */}
+        {}
         <div
           id="premium-brand-panel"
           ref={sidebarRef}
@@ -179,15 +175,15 @@ export default function Navbar() {
             w-full sm:w-[340px] lg:w-[380px]
             ${isOpen ? "translate-x-0" : "translate-x-full"}`}
         >
-          {/* Subtle Dynamic Geometric Ambient Background Decor */}
+          {}
           <div className="absolute top-[-5%] right-[-5%] w-64 h-64 rounded-full bg-[rgba(80,0,140,0.04)] blur-[60px] pointer-events-none" />
           <div className="absolute bottom-[25%] left-[-15%] w-48 h-48 rounded-full bg-[rgba(245,200,53,0.03)] blur-[50px] pointer-events-none" />
 
-          {/* Section A: Sidebar Header Bar Component (Strictly Fixed Height/Position) */}
+          {}
           <div className="p-5 md:p-6 flex items-center justify-between border-b border-[var(--kushal-border-color)] relative bg-[var(--kushal-white)]/90 backdrop-blur-md z-10">
             <div className="flex items-center gap-3">
               <div>
-                {/* High-End Branding Frame with Public Image Logo */}
+                {}
                 <a
                   href="#"
                   className="group flex items-center h-10 select-none outline-none focus-visible:ring-2 focus-visible:ring-[var(--kushal-base)] rounded-xl transition-transform duration-200 active:scale-98"
@@ -202,7 +198,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Integrated Internal Panel Close Button */}
+            {}
             <button
               onClick={() => setIsOpen(false)}
               className="w-9 h-9 rounded-xl flex items-center justify-center text-[var(--kushal-text)] hover:text-[var(--kushal-heading)] hover:bg-[var(--kushal-white3)] border border-[var(--kushal-border-color)] transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-[var(--kushal-base)]"
@@ -224,9 +220,9 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Section B: Inner Scroll Container for Information Modules */}
+          {}
           <div className="flex-1 overflow-y-auto p-5 md:p-6 space-y-5 md:space-y-6 scrollbar-thin relative z-10">
-            {/* 1. Mobile-Exclusive Navigation Cluster Stack (Strictly Hidden on Desktop Screen Viewports) */}
+            {}
             <nav className="block lg:hidden space-y-2">
               <span className="text-[10px] font-bold tracking-widest text-[var(--kushal-gray)] uppercase block mb-1">
                 Navigation
@@ -253,7 +249,7 @@ export default function Navbar() {
                         };
                         const target = routeMap[item];
                         if (target) navigate(target);
-                        // Scroll to top after navigation
+
                         window.scrollTo({ top: 0, behavior: "smooth" });
                         setActiveItem(item);
                         setIsOpen(false);
@@ -286,7 +282,7 @@ export default function Navbar() {
               <div className="h-[1px] bg-[var(--kushal-border-color)] opacity-60 pt-3" />
             </nav>
 
-            {/* 2. Contact Card Component Block */}
+            {}
             <div
               className="space-y-2 transition-all duration-300 transform delay-100"
               style={{
@@ -319,12 +315,7 @@ export default function Navbar() {
                     support@kushalapp.com
                   </span>
                 </a>
-                {/* <a href="tel:+910000000000" className="flex items-center gap-3 group outline-none">
-                    <div className="w-8 h-8 rounded-lg bg-white border border-[var(--kushal-border-color)] flex items-center justify-center text-[var(--kushal-base)] group-hover:bg-[var(--kushal-base)] group-hover:text-white transition-all duration-200">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                    </div>
-                    <span className="text-xs font-semibold text-[var(--kushal-text)] group-hover:text-[var(--kushal-heading)] transition-colors duration-200">+91 XXXXX XXXXX</span>
-                  </a> */}
+                {}
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-lg bg-white border border-[var(--kushal-border-color)] flex items-center justify-center text-[var(--kushal-base)]">
                     <svg
@@ -346,7 +337,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* 3. Follow Us Social Segment Block */}
+            {}
             <div
               className="space-y-2 transition-all duration-300 transform delay-150"
               style={{
@@ -384,7 +375,7 @@ export default function Navbar() {
                       </g>
                     ),
                   },
-                  // { name: 'LinkedIn', url: socialLinks.linkedin, icon: <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z M4 2a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/> },
+
                   {
                     name: "Youtube",
                     url: socialLinks.youtube,
@@ -419,9 +410,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Section C: Highly Optimized Ultra-Compact Bottom Fixed CTA and Footer Box */}
+          {}
           <div className="p-5 md:p-6 border-t border-[var(--kushal-border-color)] bg-[var(--kushal-white)]/95 backdrop-blur-md relative z-10 space-y-4">
-            {/* Height-Optimized Download Section (Strictly constrained within 150px - 180px target parameters) */}
+            {}
             <div
               className="bg-[var(--kushal-white3)] border border-[var(--kushal-border-color)] p-4 rounded-[var(--kushal-radius)] shadow-sm transition-all duration-300 transform delay-200"
               style={{
@@ -438,7 +429,7 @@ export default function Navbar() {
                 </p>
               </div>
 
-              {/* Dual Linear CTA Grid Stack (44px Optimized Button Height Boundary) */}
+              {}
               <div className="grid grid-cols-2 gap-3">
                 <a
                   href="https://play.google.com/store/apps/details?id=com.kushal.app&pcampaignid=web_share"
@@ -469,7 +460,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* Premium Micro-SaaS Subtle Footer */}
+            {}
             <div className="text-center text-[10px] text-[var(--kushal-gray)] font-medium tracking-wide leading-none pt-1">
               <div>&copy; 2026 KushalApp</div>
               <div className="text-[9px] opacity-70 mt-1">

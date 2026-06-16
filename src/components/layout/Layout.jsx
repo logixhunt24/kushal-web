@@ -12,12 +12,12 @@ export default function Layout() {
       className="relative min-h-screen bg-brand-bg text-brand-text"
       style={{ fontFamily: "var(--kushal-font)" }}
     >
-      <Navbar />
+      {/* <Navbar /> */}
       {showBreadcrumb && <Breadcrumb />}
       <main className="flex-1">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

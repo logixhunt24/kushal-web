@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Mail, Send } from "lucide-react";
 
-// Animation variants for staggered reveal
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.15 } },
@@ -32,7 +31,7 @@ export default function SupportContact() {
             borderRadius: "var(--kushal-radius)",
           }}
         >
-          {/* Left Side: Animated Text */}
+          {}
           <motion.div
             variants={itemVariants}
             className="flex flex-col justify-center"
@@ -79,7 +78,7 @@ export default function SupportContact() {
             </motion.div>
           </motion.div>
 
-          {/* Right Side: Animated Form */}
+          {}
           <motion.div
             variants={itemVariants}
             className="p-8 md:p-10 rounded-[calc(var(--kushal-radius)-8px)]"

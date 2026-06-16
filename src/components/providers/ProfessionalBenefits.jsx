@@ -6,10 +6,9 @@ import {
   Users,
   Sparkles,
   ArrowRight,
-  Smartphone, // Added for the updated Pill Tag design syntax
+  Smartphone,
 } from "lucide-react";
 
-// Clean, accessible animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -64,7 +63,7 @@ export default function ProfessionalBenefits() {
         backgroundColor: "var(--kushal-white3)",
       }}
     >
-      {/* Background visual accents using solid brand matching parameters */}
+      {}
       <div
         className="absolute top-[-5%] left-[-5%] w-[450px] h-[450px] rounded-full blur-[130px] pointer-events-none opacity-30"
         style={{ background: "rgba(var(--kushal-base-rgb), 0.12)" }}
@@ -74,13 +73,11 @@ export default function ProfessionalBenefits() {
         className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 w-full"
         style={{ maxWidth: "var(--container-width)" }}
       >
-        {/* Dynamic Modern Layout: Sticky Header Column paired with Content List */}
+        {}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* ========================================================
-             LEFT COLUMN: UPDATED MAIN VALUE STATEMENT (Page 2 Style)
-             ======================================================== */}
+          {}
           <div className="lg:col-span-5 lg:sticky lg:top-8 text-center lg:text-left">
-            {/* Redesigned Pill Tag Matching Page 2 */}
+            {}
             <span
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-[11px] font-bold tracking-wider uppercase mb-6 border backdrop-blur-md"
               style={{
@@ -93,7 +90,7 @@ export default function ProfessionalBenefits() {
               Providers
             </span>
 
-            {/* Redesigned Headline Block with Rotating Script-Font Block Line Break Syntax */}
+            {}
             <h2
               className="font-black text-3xl sm:text-4xl md:text-5xl tracking-tight mb-6 leading-[1.1]"
               style={{
@@ -113,7 +110,7 @@ export default function ProfessionalBenefits() {
               </span>
             </h2>
 
-            {/* Structured Sub-Paragraph */}
+            {}
             <p
               className="text-base sm:text-lg leading-relaxed text-neutral-500 font-medium max-w-xl mx-auto lg:mx-0 mb-8"
               style={{
@@ -147,7 +144,7 @@ export default function ProfessionalBenefits() {
             </motion.a>
           </div>
 
-          {/* RIGHT COLUMN: Feature Matrix Display */}
+          {}
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -171,7 +168,7 @@ export default function ProfessionalBenefits() {
                   borderRadius: "var(--kushal-radius)",
                 }}
               >
-                {/* Clean minimalist icon placeholder */}
+                {}
                 <div
                   className="w-12 h-12 shrink-0 flex items-center justify-center"
                   style={{

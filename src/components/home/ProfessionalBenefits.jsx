@@ -10,7 +10,6 @@ import {
   Rocket,
 } from "lucide-react";
 
-// Optimized Staggered Framer Motion Variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -69,7 +68,7 @@ export default function ProfessionalBenefits() {
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-28 bg-[var(--kushal-white2)] select-none">
-      {/* High-Fidelity Ambient Mesh Backdrop Flares */}
+      {}
       <div
         className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none opacity-40"
         style={{
@@ -83,7 +82,7 @@ export default function ProfessionalBenefits() {
         }}
       />
 
-      {/* Technical Dot Matrix Pattern */}
+      {}
       <div
         className="absolute inset-0 opacity-[0.015] pointer-events-none"
         style={{
@@ -95,9 +94,7 @@ export default function ProfessionalBenefits() {
       />
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
-        {/* ========================================================
-           SECTION HEADER BLOCK
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -150,9 +147,7 @@ export default function ProfessionalBenefits() {
           </p>
         </motion.div>
 
-        {/* ========================================================
-           BENEFITS CARDS MATRIX GRID
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -167,7 +162,7 @@ export default function ProfessionalBenefits() {
               whileHover={{ y: -8, transition: { duration: 0.3 } }}
               className="group relative h-full p-6 sm:p-8 rounded-3xl bg-[var(--kushal-white)] border border-neutral-200/50 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.04)] hover:shadow-[0_25px_50px_-12px_rgba(var(--kushal-base-rgb),0.12)] flex flex-col justify-between overflow-hidden"
             >
-              {/* Card Inner Background Glass Accent */}
+              {}
               <div className="absolute inset-0 bg-gradient-to-br from-transparent to-neutral-50/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
               <div className="relative z-10">
@@ -203,7 +198,7 @@ export default function ProfessionalBenefits() {
                 </p>
               </div>
 
-              {/* Index Number Identity Ribbon */}
+              {}
               <div
                 className="absolute bottom-4 right-6 text-6xl font-black opacity-[0.04] group-hover:opacity-[0.09] group-hover:scale-105 transition-all duration-500 pointer-events-none select-none"
                 style={{ color: "var(--kushal-base)" }}
@@ -214,9 +209,7 @@ export default function ProfessionalBenefits() {
           ))}
         </motion.div>
 
-        {/* ========================================================
-           REALTIME METRIC DATA STRIP
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -258,9 +251,7 @@ export default function ProfessionalBenefits() {
           ))}
         </motion.div>
 
-        {/* ========================================================
-           CONVERSION ACTION CTA BANNER BLOCK
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -317,7 +308,6 @@ export default function ProfessionalBenefits() {
             <motion.a
               href="https://play.google.com/store/apps/details?id=com.kushal.app&pcampaignid=web_share"
               target="_blank"
-              
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group shrink-0 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all duration-300 w-full sm:w-auto justify-center"
@@ -335,9 +325,7 @@ export default function ProfessionalBenefits() {
           </div>
         </motion.div>
 
-        {/* ========================================================
-           TRUST PARAMETERS BOTTOM CAP
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"

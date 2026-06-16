@@ -40,15 +40,6 @@ export default function KushalFooter() {
       href: "https://www.instagram.com/kushalserviceapp?igsh=MWZlc2Q0YTdxZnpxOA%3D%3D&utm_source=qr",
       label: "Instagram",
     },
-    // {
-    //   svg: (
-    //     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-    //       <path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zm13.5 12.3h-3v-5.6c0-1.3-.5-2.1-1.7-2.1-1 0-1.5.6-1.7 1.3-.1.2-.1.5-.1.8v5.6h-3v-11h3v1.5c.4-.7 1.2-1.7 3.1-1.7 2.3 0 4 1.5 4 4.7v6.5z" />
-    //     </svg>
-    //   ),
-    //   href: "#linkedin",
-    //   label: "LinkedIn",
-    // },
   ];
 
   return (
@@ -59,7 +50,7 @@ export default function KushalFooter() {
         fontFamily: "var(--kushal-font)",
       }}
     >
-      {/* Centered Ambient Spotlight Flare */}
+      {}
       <div className="absolute inset-0 pointer-events-none z-0">
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[180px] rounded-full blur-[100px] opacity-25"
@@ -70,13 +61,11 @@ export default function KushalFooter() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1140px]">
-        {/* ========================================================
-           OPTIMIZED COMPACT GRID ARCHITECTURE
-           ======================================================== */}
+        {}
         <div className="grid gap-8 md:grid-cols-12 items-start pb-10 border-b border-purple-950/30">
-          {/* Brand & Identity Column (Spans 5) */}
+          {}
           <div className="md:col-span-5 space-y-4">
-            {/* Logo Image Wrapper */}
+            {}
             <div className=" h-22 flex items-center justify-start overflow-hidden">
               <img
                 src="/KUSHLAPP_LOGO_WHITE_COLOR_HORIZONTAL.png"
@@ -138,7 +127,7 @@ export default function KushalFooter() {
             </ul>
           </div>
 
-          {/* Contact Details Column (Spans 4) - Snug Alignment */}
+          {}
           <div className="md:col-span-4 md:ml-auto space-y-3">
             <h5 className="text-[11px] font-black tracking-widest uppercase text-neutral-100/60">
               Contact Details
@@ -156,15 +145,7 @@ export default function KushalFooter() {
                   India
                 </span>
               </div>
-              {/* <div className="flex items-center gap-2.5 group cursor-pointer">
-                <Phone
-                  size={15}
-                  className="text-neutral-400 group-hover:text-white transition-colors shrink-0"
-                />
-                <span className="group-hover:text-white transition-colors">
-                  +91 (800) 456-7890
-                </span>
-              </div> */}
+              {}
               <div className="flex items-center gap-2.5 group cursor-pointer">
                 <Mail
                   size={15}
@@ -178,9 +159,7 @@ export default function KushalFooter() {
           </div>
         </div>
 
-        {/* ========================================================
-           CLEAN CENTERED FOOTER BASE
-           ======================================================== */}
+        {}
         <div className="pt-6 flex justify-center items-center text-[13px] font-medium text-neutral-400/60">
           <p
             style={{ fontFamily: "var(--kushal-secondary-font)" }}

@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MessageSquare, Star, Quote, CheckCircle2 } from "lucide-react";
 
-// Animation configurations
 const textFadeUpVariants = {
   hidden: { opacity: 0, y: 25 },
   visible: {
@@ -13,7 +12,6 @@ const textFadeUpVariants = {
 };
 
 const CONFIG = {
-  // Row 1 Testimonials: Focused on Users & Customers (Moves Left)
   row1: [
     {
       id: 1,
@@ -43,7 +41,7 @@ const CONFIG = {
       badge: "Verified User",
     },
   ],
-  // Row 2 Testimonials: Focused on Service Providers & Professionals (Moves Right)
+
   row2: [
     {
       id: 4,
@@ -76,11 +74,9 @@ const CONFIG = {
 };
 
 export default function KushalTestimonials() {
-  // Triple the arrays to guarantee seamless looping transitions with no blank spots
   const duplicatedRow1 = [...CONFIG.row1, ...CONFIG.row1, ...CONFIG.row1];
   const duplicatedRow2 = [...CONFIG.row2, ...CONFIG.row2, ...CONFIG.row2];
 
-  // Helper component to render stars precisely
   const RenderStars = ({ rating }) => {
     const fullStars = Math.floor(rating);
     return (
@@ -107,7 +103,7 @@ export default function KushalTestimonials() {
         fontFamily: "var(--kushal-font)",
       }}
     >
-      {/* Ambient Radial Mesh Gradients */}
+      {}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <div
           className="absolute top-[20%] right-[-10%] w-[600px] h-[600px] rounded-full blur-[140px] opacity-25"
@@ -124,9 +120,7 @@ export default function KushalTestimonials() {
       </div>
 
       <div className="relative z-10 w-full">
-        {/* ========================================================
-           CENTERED HEADER CONTENT ROW (EXACT KUSHALAPP STYLE)
-           ======================================================== */}
+        {}
         <div
           className="px-4 sm:px-6 lg:px-8 mx-auto"
           style={{ maxWidth: "var(--container-width)" }}
@@ -138,7 +132,7 @@ export default function KushalTestimonials() {
             variants={textFadeUpVariants}
             className="max-w-3xl mx-auto text-center mb-16 md:mb-20"
           >
-            {/* Tag Badge Pill */}
+            {}
             <span
               className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5 backdrop-blur-md border transition-transform hover:scale-105"
               style={{
@@ -151,7 +145,7 @@ export default function KushalTestimonials() {
               User Reviews
             </span>
 
-            {/* Unified Title Block */}
+            {}
             <h2
               className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6"
               style={{
@@ -171,7 +165,7 @@ export default function KushalTestimonials() {
               </span>
             </h2>
 
-            {/* Centered Descriptive Blurb */}
+            {}
             <p
               className="text-base sm:text-lg leading-relaxed font-medium max-w-2xl mx-auto"
               style={{
@@ -186,9 +180,7 @@ export default function KushalTestimonials() {
           </motion.div>
         </div>
 
-        {/* ========================================================
-           ROW 1: CONTINUOUSLY MOVING LEFT (Customers / Users)
-           ======================================================== */}
+        {}
         <div className="relative w-full overflow-hidden py-4 flex before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-24 before:bg-gradient-to-r before:from-[var(--kushal-white2)] before:to-transparent after:absolute after:right-0 after:top-0 after:z-20 after:h-full after:w-24 after:bg-gradient-to-l after:from-[var(--kushal-white2)] after:to-transparent">
           <motion.div
             className="flex gap-6 shrink-0 px-4"
@@ -206,11 +198,11 @@ export default function KushalTestimonials() {
                 className="w-[360px] sm:w-[430px] shrink-0 p-6 sm:p-7 flex flex-col justify-between border relative group transition-all duration-300 shadow-xl border-purple-950/40"
                 style={{
                   borderRadius: "var(--kushal-radius)",
-                  backgroundColor: "#140E24", // Dark Purple Theme Matched Card Base
+                  backgroundColor: "#140E24",
                 }}
               >
                 <div>
-                  {/* Testimonial Author Info block */}
+                  {}
                   <div className="flex items-center gap-4 pb-4 border-b border-purple-900/30">
                     <div
                       className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm text-white select-none border border-purple-800/30"
@@ -232,16 +224,16 @@ export default function KushalTestimonials() {
                     </span>
                   </div>
 
-                  {/* Rating Stars Layout row */}
+                  {}
                   <RenderStars rating={item.rating} />
 
-                  {/* Testimonial body content */}
+                  {}
                   <p className="text-sm leading-relaxed text-purple-100/85 font-medium mt-3">
                     "{item.text}"
                   </p>
                 </div>
 
-                {/* Accent glow strip on hover */}
+                {}
                 <div
                   className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] w-0 group-hover:w-[85%] transition-all duration-300 rounded-full shadow-[0_0_12px_rgba(var(--kushal-base-rgb),0.6)]"
                   style={{ backgroundColor: "var(--kushal-base)" }}
@@ -251,9 +243,7 @@ export default function KushalTestimonials() {
           </motion.div>
         </div>
 
-        {/* ========================================================
-           ROW 2: CONTINUOUSLY MOVING RIGHT (Providers / Experts)
-           ======================================================== */}
+        {}
         <div className="relative w-full overflow-hidden py-4 mt-5 flex before:absolute before:left-0 before:top-0 before:z-20 before:h-full before:w-24 before:bg-gradient-to-r before:from-[var(--kushal-white2)] before:to-transparent after:absolute after:right-0 after:top-0 after:z-20 after:h-full after:w-24 after:bg-gradient-to-l after:from-[var(--kushal-white2)] after:to-transparent">
           <motion.div
             className="flex gap-6 shrink-0 px-4"
@@ -271,11 +261,11 @@ export default function KushalTestimonials() {
                 className="w-[360px] sm:w-[430px] shrink-0 p-6 sm:p-7 flex flex-col justify-between border relative group transition-all duration-300 shadow-xl border-purple-950/40"
                 style={{
                   borderRadius: "var(--kushal-radius)",
-                  backgroundColor: "#140E24", // Dark Purple Theme Matched Card Base
+                  backgroundColor: "#140E24",
                 }}
               >
                 <div>
-                  {/* Testimonial Author Info block */}
+                  {}
                   <div className="flex items-center gap-4 pb-4 border-b border-purple-900/30">
                     <div className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm text-purple-950 select-none border border-purple-300/20 bg-purple-100">
                       {item.initials}
@@ -294,16 +284,16 @@ export default function KushalTestimonials() {
                     </span>
                   </div>
 
-                  {/* Rating Stars Layout row */}
+                  {}
                   <RenderStars rating={item.rating} />
 
-                  {/* Testimonial body content */}
+                  {}
                   <p className="text-sm leading-relaxed text-purple-100/85 font-medium mt-3">
                     "{item.text}"
                   </p>
                 </div>
 
-                {/* Accent glow strip on hover */}
+                {}
                 <div
                   className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] w-0 group-hover:w-[85%] transition-all duration-300 rounded-full shadow-[0_0_12px_rgba(var(--kushal-base-rgb),0.6)]"
                   style={{ backgroundColor: "var(--kushal-base)" }}

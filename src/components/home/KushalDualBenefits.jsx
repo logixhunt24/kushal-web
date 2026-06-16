@@ -13,7 +13,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-// Animation Variants
 const textFadeUpVariants = {
   hidden: { opacity: 0, y: 25 },
   visible: {
@@ -42,7 +41,6 @@ const cardVariants = {
 };
 
 export default function KushalDualBenefits() {
-  // Toggle state between 'user' and 'provider'
   const [activeTab, setActiveTab] = useState("user");
 
   const benefitData = {
@@ -134,7 +132,7 @@ export default function KushalDualBenefits() {
         fontFamily: "var(--kushal-font)",
       }}
     >
-      {/* Immersive Lavender / Accent Ambient Backdrop Flares */}
+      {}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
         <motion.div
           animate={{ x: [0, 20, 0], y: [0, -25, 0] }}
@@ -163,9 +161,7 @@ export default function KushalDualBenefits() {
         className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 w-full"
         style={{ maxWidth: "var(--container-width)" }}
       >
-        {/* ========================================================
-           CENTERED HEADER CONTENT ROW (EXACT MATCHED LAYOUT STYLE)
-           ======================================================== */}
+        {}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -173,7 +169,7 @@ export default function KushalDualBenefits() {
           variants={textFadeUpVariants}
           className="max-w-3xl mx-auto text-center mb-12 md:mb-16"
         >
-          {/* Tag Badge Pill */}
+          {}
           <span
             className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase mb-5 backdrop-blur-md border transition-transform hover:scale-105"
             style={{
@@ -186,7 +182,7 @@ export default function KushalDualBenefits() {
             Platform Ecosystem
           </span>
 
-          {/* Unified Title Block with Script Subtitle Variable Accent */}
+          {}
           <h2
             className="font-black text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-tight mb-6"
             style={{
@@ -206,7 +202,7 @@ export default function KushalDualBenefits() {
             </span>
           </h2>
 
-          {/* Centered Descriptive Blurb */}
+          {}
           <p
             className="text-base sm:text-lg leading-relaxed font-medium max-w-2xl mx-auto"
             style={{
@@ -220,12 +216,10 @@ export default function KushalDualBenefits() {
           </p>
         </motion.div>
 
-        {/* ========================================================
-           SEGMENTED ANIMATED TAB TOGGLE SWITCH
-           ======================================================== */}
+        {}
         <div className="flex justify-center mb-12 md:mb-16 relative z-20">
           <div className="flex p-1.5 bg-neutral-200/60 backdrop-blur-md border border-neutral-300/40 rounded-2xl w-full max-w-[340px] sm:max-w-[400px]">
-            {/* User Tab Trigger */}
+            {}
             <button
               onClick={() => setActiveTab("user")}
               className="relative flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-xs sm:text-sm font-bold transition-colors duration-200 focus:outline-hidden z-10"
@@ -248,7 +242,7 @@ export default function KushalDualBenefits() {
               For Our Users
             </button>
 
-            {/* Provider Tab Trigger */}
+            {}
             <button
               onClick={() => setActiveTab("provider")}
               className="relative flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-xs sm:text-sm font-bold transition-colors duration-200 focus:outline-hidden z-10"
@@ -273,9 +267,7 @@ export default function KushalDualBenefits() {
           </div>
         </div>
 
-        {/* ========================================================
-           DYNAMIC GRID CARD AREA WITH STAGGER ANIMATIONS
-           ======================================================== */}
+        {}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -303,7 +295,7 @@ export default function KushalDualBenefits() {
                 }}
               >
                 <div>
-                  {/* Icon Block with subtle color background */}
+                  {}
                   <div className="flex items-center justify-between gap-4 mb-6">
                     <div
                       className="w-12 h-12 flex items-center justify-center border border-neutral-100 shadow-3xs transition-transform duration-300 group-hover:scale-105"
@@ -316,7 +308,7 @@ export default function KushalDualBenefits() {
                       {benefit.icon}
                     </div>
 
-                    {/* Inline micro indicator pill */}
+                    {}
                     <span
                       className="text-[10px] font-bold tracking-wider uppercase px-2.5 py-1 rounded-md"
                       style={{
@@ -328,7 +320,7 @@ export default function KushalDualBenefits() {
                     </span>
                   </div>
 
-                  {/* Benefit Title Header */}
+                  {}
                   <h3
                     className="text-lg font-bold tracking-tight mb-2.5 transition-colors duration-200 group-hover:text-[var(--kushal-base)]"
                     style={{
@@ -339,7 +331,7 @@ export default function KushalDualBenefits() {
                     {benefit.title}
                   </h3>
 
-                  {/* Accessible Plain English Description */}
+                  {}
                   <p
                     className="text-sm leading-relaxed font-medium"
                     style={{
@@ -351,7 +343,7 @@ export default function KushalDualBenefits() {
                   </p>
                 </div>
 
-                {/* Micro Action Visual Anchor Line */}
+                {}
                 <div className="w-full h-[2px] bg-neutral-100 rounded-full mt-6 overflow-hidden relative">
                   <div
                     className="h-full w-0 group-hover:w-full transition-all duration-300 ease-out rounded-full"
