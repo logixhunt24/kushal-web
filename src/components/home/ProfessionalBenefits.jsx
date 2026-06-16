@@ -315,7 +315,9 @@ export default function ProfessionalBenefits() {
             </div>
 
             <motion.a
-              href="/providers"
+              href="https://play.google.com/store/apps/details?id=com.kushal.app&pcampaignid=web_share"
+              target="_blank"
+              
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               className="group shrink-0 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all duration-300 w-full sm:w-auto justify-center"
