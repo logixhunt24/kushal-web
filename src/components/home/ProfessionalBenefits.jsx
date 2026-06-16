@@ -315,21 +315,21 @@ export default function ProfessionalBenefits() {
             </div>
 
             <motion.a
-                  href="/providers"
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                  className="group shrink-0 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all duration-300 w-full sm:w-auto justify-center"
-                  style={{
-                    background: "var(--kushal-base)",
-                    color: "var(--kushal-white)",
-                  }}
-                >
-                  Join as a Professional
-                  <ArrowRight
-                    size={16}
-                    className="group-hover:translate-x-1 transition-transform stroke-[2.5]"
-                  />
-                </motion.a>
+              href="/providers"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="group shrink-0 inline-flex items-center gap-2 px-8 py-4 rounded-2xl font-bold shadow-md hover:shadow-xl transition-all duration-300 w-full sm:w-auto justify-center"
+              style={{
+                background: "var(--kushal-base)",
+                color: "var(--kushal-white)",
+              }}
+            >
+              Join as a Professional
+              <ArrowRight
+                size={16}
+                className="group-hover:translate-x-1 transition-transform stroke-[2.5]"
+              />
+            </motion.a>
           </div>
         </motion.div>
 

@@ -1,0 +1,15 @@
+{
+  "name": "KushalApp",
+  "short_name": "KushalApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#50008C",
+  "icons": [
+    {
+      "src": "/KKUSHALAPP_FAVICON.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

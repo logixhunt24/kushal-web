@@ -5,25 +5,25 @@
   --kushal-script-font: "Kaushan Script", cursive;
 
   /* Brand Colors */
-  --kushal-base: #50008C;
+  --kushal-base: #50008c;
   --kushal-base-rgb: 80, 0, 140;
 
   /* Accent Color */
-  --kushal-primary: #F5C835;
+  --kushal-primary: #f5c835;
   --kushal-primary-rgb: 245, 200, 53;
 
   /* Text */
   --kushal-text: #636363;
   --kushal-text-rgb: 99, 99, 99;
 
-  --kushal-heading: #0E0E0E;
+  --kushal-heading: #0e0e0e;
   --kushal-heading-rgb: 14, 14, 14;
 
   /* Whites */
-  --kushal-white: #FFFFFF;
-  --kushal-white2: #FCFCFC;
+  --kushal-white: #ffffff;
+  --kushal-white2: #fcfcfc;
   --kushal-white3: #f1ebf9;
-  --kushal-white4: #F1EAFE;
+  --kushal-white4: #f1eafe;
 
   /* Blacks */
   --kushal-black: #000000;
@@ -31,8 +31,8 @@
   --kushal-black3: #333333;
 
   /* Gray */
-  --kushal-gray: #92918F;
-  --kushal-border-color: #DDDDDD;
+  --kushal-gray: #92918f;
+  --kushal-border-color: #dddddd;
 
   /* Shadows */
   --kushal-shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -49,7 +49,7 @@
   /* Transition */
   --kushal-transition: all 0.3s ease;
 
-   /* Primary Font */
+  /* Primary Font */
   --kushal-font: "Montserrat", sans-serif;
 
   /* Secondary Font */

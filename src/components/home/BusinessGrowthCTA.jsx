@@ -6,7 +6,7 @@ import {
   Users,
   Sparkles,
   ArrowRight,
-  Smartphone // Added for the updated Pill Tag design syntax
+  Smartphone, // Added for the updated Pill Tag design syntax
 } from "lucide-react";
 
 // Clean, accessible animation variants
@@ -32,32 +32,36 @@ export default function ProfessionalBenefits() {
     {
       icon: <BadgeDollarSign size={24} />,
       title: "Keep 100% of Your Money",
-      description: "We charge zero commission. Everything you earn from your clients goes directly into your pocket.",
+      description:
+        "We charge zero commission. Everything you earn from your clients goes directly into your pocket.",
     },
     {
       icon: <ShieldCheck size={24} />,
       title: "Set Your Own Prices",
-      description: "You are in control. Choose your own rates based on your work experience and skills.",
+      description:
+        "You are in control. Choose your own rates based on your work experience and skills.",
     },
     {
       icon: <Users size={24} />,
       title: "Talk Directly with Clients",
-      description: "No middleman. Chat and negotiate directly with your customers to agree on the best deal.",
+      description:
+        "No middleman. Chat and negotiate directly with your customers to agree on the best deal.",
     },
     {
       icon: <Sparkles size={24} />,
       title: "Get Found More Easily",
-      description: "Boost your local business visibility with featured job listings and direct customer phone calls.",
+      description:
+        "Boost your local business visibility with featured job listings and direct customer phone calls.",
     },
   ];
 
   return (
-    <section 
+    <section
       className="relative overflow-hidden select-none"
       style={{
         paddingTop: "var(--section-space)",
         paddingBottom: "var(--section-space)",
-        backgroundColor: "var(--kushal-white3)"
+        backgroundColor: "var(--kushal-white3)",
       }}
     >
       {/* Background visual accents using solid brand matching parameters */}
@@ -66,13 +70,12 @@ export default function ProfessionalBenefits() {
         style={{ background: "rgba(var(--kushal-base-rgb), 0.12)" }}
       />
 
-      <div 
+      <div
         className="relative z-10 mx-auto px-4 sm:px-6 lg:px-8 w-full"
         style={{ maxWidth: "var(--container-width)" }}
       >
         {/* Dynamic Modern Layout: Sticky Header Column paired with Content List */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
           {/* ========================================================
              LEFT COLUMN: UPDATED MAIN VALUE STATEMENT (Page 2 Style)
              ======================================================== */}
@@ -86,7 +89,8 @@ export default function ProfessionalBenefits() {
                 borderColor: `rgba(var(--kushal-base-rgb), 0.12)`,
               }}
             >
-              <Smartphone size={13} className="animate-pulse" /> For Service Providers
+              <Smartphone size={13} className="animate-pulse" /> For Service
+              Providers
             </span>
 
             {/* Redesigned Headline Block with Rotating Script-Font Block Line Break Syntax */}
@@ -98,13 +102,16 @@ export default function ProfessionalBenefits() {
               }}
             >
               Grow Your Business Without{" "}
-              <span 
+              <span
                 className="block mt-1 transform -rotate-1 hover:rotate-1 transition-transform duration-300 select-none"
-                style={{ color: "var(--kushal-base)", fontFamily: "var(--kushal-script-font)" }}
+                style={{
+                  color: "var(--kushal-base)",
+                  fontFamily: "var(--kushal-script-font)",
+                }}
               >
                 Paying Commission
               </span>
-            </h2> 
+            </h2>
 
             {/* Structured Sub-Paragraph */}
             <p
@@ -114,12 +121,14 @@ export default function ProfessionalBenefits() {
                 color: "var(--kushal-text)",
               }}
             >
-              Our platform helps local professionals find more work, communicate freely, and run their business with total honesty. Expand your reach and connect directly with users near you.
+              Our platform helps local professionals find more work, communicate
+              freely, and run their business with total honesty. Expand your
+              reach and connect directly with users near you.
             </p>
 
             <motion.a
-            href="https://play.google.com/store/apps/details?id=com.kushalapp.partner&pcampaignid=web_share"
-            target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.kushalapp.partner&pcampaignid=web_share"
+              target="_blank"
               whileHover={{ scale: 1.02, boxShadow: "var(--kushal-shadow-md)" }}
               whileTap={{ scale: 0.98 }}
               className="group inline-flex items-center gap-2.5 px-7 py-3.5 font-bold transition-all duration-200 w-full sm:w-auto justify-center"
@@ -127,7 +136,7 @@ export default function ProfessionalBenefits() {
                 backgroundColor: "var(--kushal-base)",
                 color: "var(--kushal-white)",
                 borderRadius: "calc(var(--kushal-radius) - 2px)",
-                fontFamily: "var(--kushal-secondary-font)"
+                fontFamily: "var(--kushal-secondary-font)",
               }}
             >
               Join as a Provider
@@ -150,10 +159,10 @@ export default function ProfessionalBenefits() {
               <motion.div
                 key={index}
                 variants={itemVariants}
-                whileHover={{ 
-                  x: 4, 
+                whileHover={{
+                  x: 4,
                   borderColor: "rgba(var(--kushal-base-rgb), 0.25)",
-                  boxShadow: "var(--kushal-shadow-sm)"
+                  boxShadow: "var(--kushal-shadow-sm)",
                 }}
                 className="p-5 sm:p-6 border flex flex-col sm:flex-row items-start gap-4 transition-all duration-200"
                 style={{
@@ -168,7 +177,7 @@ export default function ProfessionalBenefits() {
                   style={{
                     backgroundColor: `rgba(var(--kushal-base-rgb), 0.08)`,
                     color: "var(--kushal-base)",
-                    borderRadius: "calc(var(--kushal-radius) - 4px)"
+                    borderRadius: "calc(var(--kushal-radius) - 4px)",
                   }}
                 >
                   {item.icon}
@@ -197,7 +206,6 @@ export default function ProfessionalBenefits() {
               </motion.div>
             ))}
           </motion.div>
-
         </div>
       </div>
     </section>

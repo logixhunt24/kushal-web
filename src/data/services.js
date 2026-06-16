@@ -6,9 +6,10 @@ export const services = [
     price: "From $99",
     rating: 4.9,
     reviews: 1205,
-    description: "Thorough cleaning of rooms, kitchens, bathrooms, window panes, and floor scrubbing.",
+    description:
+      "Thorough cleaning of rooms, kitchens, bathrooms, window panes, and floor scrubbing.",
     iconName: "Sparkles",
-    popular: true
+    popular: true,
   },
   {
     id: "ac-servicing",
@@ -17,9 +18,10 @@ export const services = [
     price: "From $49",
     rating: 4.8,
     reviews: 948,
-    description: "Filter cleaning, gas filling, and troubleshooting of split and window air conditioners.",
+    description:
+      "Filter cleaning, gas filling, and troubleshooting of split and window air conditioners.",
     iconName: "Wind",
-    popular: true
+    popular: true,
   },
   {
     id: "plumbing-fix",
@@ -28,9 +30,10 @@ export const services = [
     price: "From $39",
     rating: 4.7,
     reviews: 822,
-    description: "Fixing leakages, blocks, pipe installations, and fitting bathroom accessories.",
+    description:
+      "Fixing leakages, blocks, pipe installations, and fitting bathroom accessories.",
     iconName: "Droplet",
-    popular: true
+    popular: true,
   },
   {
     id: "massage-therapy",
@@ -39,9 +42,10 @@ export const services = [
     price: "From $59",
     rating: 4.9,
     reviews: 742,
-    description: "Soothing deep tissue or aromatherapy massages by certified therapists at home.",
+    description:
+      "Soothing deep tissue or aromatherapy massages by certified therapists at home.",
     iconName: "Smile",
-    popular: false
+    popular: false,
   },
   {
     id: "smart-tv",
@@ -50,9 +54,10 @@ export const services = [
     price: "From $45",
     rating: 4.8,
     reviews: 410,
-    description: "Wall mounting, wiring organization, and smart TV OS updates/app integration.",
+    description:
+      "Wall mounting, wiring organization, and smart TV OS updates/app integration.",
     iconName: "Tv",
-    popular: true
+    popular: true,
   },
   {
     id: "electrician",
@@ -61,9 +66,10 @@ export const services = [
     price: "From $45",
     rating: 4.8,
     reviews: 1104,
-    description: "Installation of lights, fans, switchboards, and electrical troubleshooting.",
+    description:
+      "Installation of lights, fans, switchboards, and electrical troubleshooting.",
     iconName: "Zap",
-    popular: true
+    popular: true,
   },
   {
     id: "hair-styling",
@@ -72,9 +78,10 @@ export const services = [
     price: "From $35",
     rating: 4.7,
     reviews: 629,
-    description: "Haircut, styling, blow dry, facial treatments, and premium manicure services.",
+    description:
+      "Haircut, styling, blow dry, facial treatments, and premium manicure services.",
     iconName: "Scissors",
-    popular: false
+    popular: false,
   },
   {
     id: "lawn-maintenance",
@@ -83,8 +90,9 @@ export const services = [
     price: "From $50",
     rating: 4.6,
     reviews: 310,
-    description: "Precision lawn mowing, hedge trimming, weeding, and garden cleanups.",
+    description:
+      "Precision lawn mowing, hedge trimming, weeding, and garden cleanups.",
     iconName: "Leaf",
-    popular: false
-  }
+    popular: false,
+  },
 ];
