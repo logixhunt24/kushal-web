@@ -240,51 +240,7 @@ export default function KushalFeatures() {
           })}
         </motion.div>
 
-        {/* ========================================================
-           TRUST SUBFOOTER TAB PIN
-           ======================================================== */}
-        <motion.div
-          initial={{ opacity: 0, y: 15 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mt-12 p-4 border text-center max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 backdrop-blur-md shadow-3xs"
-          style={{
-            backgroundColor: 'rgba(255, 255, 255, 0.8)',
-            borderColor: 'var(--kushal-border-color)',
-            borderRadius: 'var(--kushal-radius)'
-          }}
-        >
-          <div className="flex -space-x-1.5">
-            {[Clock, Award, ShieldCheck].map((IconNode, i) => (
-              <div 
-                key={i} 
-                className="w-6 h-6 rounded-full border border-white flex items-center justify-center text-white"
-                style={{ backgroundColor: 'var(--kushal-base)' }}
-              >
-                <IconNode size={10} />
-              </div>
-            ))}
-          </div>
-
-          <span 
-            className="text-xs font-bold tracking-wide text-neutral-800"
-            style={{ fontFamily: 'var(--kushal-font)' }}
-          >
-            Hassle-Free Booking Covered by Secure Assurances.
-          </span>
-
-          <span className="hidden sm:inline-block text-neutral-300 text-xs">|</span>
-
-          <a 
-            href="#explore" 
-            className="text-[10px] font-bold uppercase tracking-wider inline-flex items-center gap-1 group/link"
-            style={{ color: 'var(--kushal-base)' }}
-          >
-            Explore
-            <ArrowRight size={12} className="transition-transform group-hover/link:translate-x-0.5" />
-          </a>
-        </motion.div>
+       
 
       </div>
     </section>

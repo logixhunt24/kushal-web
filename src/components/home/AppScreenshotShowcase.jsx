@@ -157,13 +157,13 @@ export default function AppScreenshotShowcase() {
                   />
 
                   {/* Mock Status Bar - Placed safely over image layout */}
-                  <div className="flex justify-between items-center text-[10px] font-bold opacity-90 z-10 bg-neutral-900/10 backdrop-blur-xs px-2 py-0.5 rounded-full">
+                  {/* <div className="flex justify-between items-center text-[10px] font-bold opacity-90 z-10 bg-neutral-900/10 backdrop-blur-xs px-2 py-0.5 rounded-full">
                     <span>9:41</span>
                     <div className="flex items-center gap-1">
                       <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block animate-pulse" />
                       <span>5G</span>
                     </div>
-                  </div>
+                  </div> */}
 
                   {/* Fallback Text: Only visible if image fails or path is completely empty */}
                   <div className="my-auto flex flex-col items-center text-center px-2 z-5 opacity-40 pointer-events-none">

@@ -277,7 +277,7 @@ export default function KushalFeatures() {
           <span className="hidden sm:inline-block text-neutral-300 text-xs">|</span>
 
           <a 
-            href="#explore" 
+            href="/features" 
             className="text-[10px] font-bold uppercase tracking-wider inline-flex items-center gap-1 group/link"
             style={{ color: 'var(--kushal-base)' }}
           >

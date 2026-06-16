@@ -52,7 +52,7 @@ const CATEGORIES = [
 
 const TRUST_PARAMS = [
   { icon: ShieldCheck, text: "Verified Experts" },
-  { icon: CreditCard, text: "Secure Escrows" },
+  { icon: CreditCard, text: "Secure Payments" },
   { icon: BadgePercent, text: "Zero Provider Commission" },
 ];
 

@@ -205,7 +205,7 @@ export default function KushalTestimonials() {
                       {item.initials}
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-purple-50 tracking-tight">{item.name}</h4>
+                      <h4 className="font-bold text-sm !text-white tracking-tight">{item.name}</h4>
                       <p className="text-xs text-purple-300/70 font-medium">{item.role}</p>
                     </div>
                     <span className="ml-auto text-[10px] font-black tracking-wider uppercase px-2 py-0.5 rounded-sm bg-purple-500/10 text-purple-300 border border-purple-500/20 self-start flex items-center gap-1">

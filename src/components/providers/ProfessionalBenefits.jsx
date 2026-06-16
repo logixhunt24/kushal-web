@@ -118,7 +118,9 @@ export default function ProfessionalBenefits() {
               Our platform helps local professionals find more work, communicate freely, and run their business with total honesty. Expand your reach and connect directly with users near you.
             </p>
 
-            <motion.button
+            <motion.a
+            href="https://play.google.com/store/apps/details?id=com.kushalapp.partner&pcampaignid=web_share"
+            target="_blank"
               whileHover={{ scale: 1.02, boxShadow: "var(--kushal-shadow-md)" }}
               whileTap={{ scale: 0.98 }}
               className="group inline-flex items-center gap-2.5 px-7 py-3.5 font-bold transition-all duration-200 w-full sm:w-auto justify-center"
@@ -134,7 +136,7 @@ export default function ProfessionalBenefits() {
                 size={16}
                 className="group-hover:translate-x-1 transition-transform stroke-[2.5]"
               />
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* RIGHT COLUMN: Feature Matrix Display */}

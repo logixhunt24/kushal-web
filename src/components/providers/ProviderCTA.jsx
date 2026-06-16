@@ -60,14 +60,16 @@ export default function ProviderCTA() {
 
           {/* Action Row */}
           <div className="flex flex-col items-center gap-8">
-            <motion.button 
+            <motion.a
+            href="https://play.google.com/store/apps/details?id=com.kushalapp.partner&pcampaignid=web_share"
+            target="_blank"
               whileHover={{ scale: 1.02, boxShadow: "var(--kushal-shadow-md)" }}
               whileTap={{ scale: 0.98 }}
               className="px-10 py-4 font-black text-lg rounded-[calc(var(--kushal-radius)-2px)] flex items-center gap-3 transition-all"
               style={{ backgroundColor: 'var(--kushal-base)', color: 'var(--kushal-white)' }}
             >
               <Download size={20} /> Download Provider App
-            </motion.button>
+            </motion.a>
 
             {/* Trust Tags */}
             <div className="flex flex-wrap justify-center gap-6 text-[11px] font-bold uppercase tracking-wider" style={{ color: 'var(--kushal-text)' }}>
