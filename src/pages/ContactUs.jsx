@@ -15,10 +15,10 @@ const ContactUs = () => {
         canonical="https://kushalapp.com/contact"
         url="https://kushalapp.com/contact"
       />
-      <Navbar />
+      {/* <Navbar /> */}
       <Contact />
       <DownloadCTA />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { QRCodeSVG } from "qrcode.react";
 import { Smartphone, Download, CheckCircle } from "lucide-react";
-import mockupImg from "../assets/img/kushalapp_mockup_homescreen.jpeg";
+import mockupImg from "../assets/img/kushalapp_mockup_homescreen2.jpeg";
 
 const basicFadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -177,28 +177,28 @@ export default function DownloadCTA({
               <div className="absolute w-96 h-96 border border-dashed border-neutral-200/40 rounded-full -z-10" />
 
               {}
-              <div className="relative w-[250px] h-[520px] bg-neutral-950 rounded-[3rem] p-2.5 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] border-[5px] border-neutral-800 ring-1 ring-neutral-700/50">
+              <div className="relative w-[270px] h-[550px] bg-neutral-950 rounded-[3rem] p-2.5 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] border-[5px] border-neutral-800 ring-1 ring-neutral-700/50">
                 {}
                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-20 h-4.5 bg-neutral-950 rounded-full z-30 flex items-center justify-center border border-neutral-900/40">
                   <div className="w-2.5 h-2.5 rounded-full bg-neutral-900/80 ml-auto mr-2" />
                 </div>
 
                 {}
-                <div className="w-full h-full rounded-[2.6rem] overflow-hidden relative z-20 bg-neutral-900 shadow-inner">
+                <div className="w-full h-full rounded-[2rem] overflow-hidden relative z-20 bg-neutral-900 shadow-inner">
                   {}
-                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none z-20" />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/5 to-white/10 pointer-events-none z-10" />
 
                   <img
                     src={mockupImg}
                     alt="KushalApp Mobile Homescreen Interface"
-                    className="w-full h-full object-cover object-top select-none pointer-events-none"
+                    className="w-full h-full  object-cover object-top select-none pointer-events-none"
                   />
                 </div>
               </div>
 
               {}
               <div
-                className="hidden xl:flex absolute bottom-4 right-[-30px] p-3.5 border border-neutral-200/50 rounded-2xl shadow-xl flex-col items-center gap-1.5 backdrop-blur-md transition-transform hover:scale-105"
+                className="hidden xl:flex absolute bottom-4 right-[-30px] p-3.5 border border-neutral-200/50 rounded-2xl shadow-xl flex-col items-center gap-1.5 backdrop-blur-md transition-transform hover:scale-105 z-[999]"
                 style={{ backgroundColor: "rgba(255, 255, 255, 0.96)" }}
               >
                 <div

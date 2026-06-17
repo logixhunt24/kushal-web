@@ -4,7 +4,7 @@ import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import Breadcrumb from "../../common/Breadcrumb";
 
-export default function Layout() {
+export default function Layout({ children }) {
   const { pathname } = useLocation();
   const showBreadcrumb = pathname !== "/";
   return (
@@ -12,12 +12,14 @@ export default function Layout() {
       className="relative min-h-screen bg-brand-bg text-brand-text"
       style={{ fontFamily: "var(--kushal-font)" }}
     >
-      {/* <Navbar /> */}
+      <Navbar />
       {showBreadcrumb && <Breadcrumb />}
       <main className="flex-1">
-        <Outlet />
+        {children || <Outlet />}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
+
+

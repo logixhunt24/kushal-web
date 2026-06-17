@@ -1,0 +1,31 @@
+# KushalApp - All-in-One Service Marketplace Platform
+
+KushalApp is an advanced all-in-one service marketplace platform designed to connect customers with verified professionals across multiple service categories including home maintenance, beauty and wellness, repair services, delivery solutions, and digital services. With easy booking, real-time tracking, secure online payments, transparent pricing, and a reliable rating system, KushalApp ensures a seamless and trusted service experience for both customers and service providers.
+
+## General Information
+
+- [About Us](https://kushalapp.com/About): This page provides an overview of KushalApp, detailing its mission, vision, and the core values that drive the platform's commitment to connecting customers with reliable service providers.
+  
+- [Contact Us](https://kushalapp.com/Contact): Users can find information on how to get in touch with KushalApp for inquiries, support, or feedback.
+
+
+
+- [Privacy Policy](https://kushalapp.com/Privacy): This document outlines how KushalApp collects, uses, and protects user data, ensuring compliance with privacy regulations and user trust.
+
+- [Terms & Conditions](https://kushalapp.com/Terms): This page details the legal agreements and conditions that users must agree to when using the KushalApp platform.
+
+- [Refund Policy](https://kushalapp.com/Refund): This document explains the terms under which users can request refunds for services booked through KushalApp.
+
+## Features
+
+- [Features](https://kushalapp.com/Features): This section highlights the key functionalities of KushalApp, including easy booking, real-time tracking, secure online payments, transparent pricing, and a reliable rating system that enhances the user experience.
+
+## App Access
+
+- [Download App](https://kushalapp.com/#download): Users can access the mobile application of KushalApp through this link, enabling them to book services and manage their accounts on the go.
+
+## Additional Resources
+
+- [contact@kushalapp.com](mailto:contact@kushalapp.com): This email address provides a direct line for users to reach out to KushalApp for support or inquiries. 
+
+This structured summary encapsulates the essential information about KushalApp, ensuring that users can easily navigate and understand the platform's offerings and policies.

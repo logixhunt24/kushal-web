@@ -1,8 +1,5 @@
 import React from "react";
 import SEO from "../components/SEO.jsx";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/layout/Footer";
-
 import Hero from "../components/home/Hero";
 import ProfessionalBenefits from "../components/home/ProfessionalBenefits";
 import KushalFeaturesSection from "../components/home/KushalFeaturesSection";
@@ -14,7 +11,7 @@ import KushalTestimonials from "../components/home/KushalTestimonials";
 
 export default function Home() {
   return (
-    <React.Fragment>
+    <>
       <SEO
         title="KushalApp | Trusted Service Marketplace App"
         description="Book trusted services anytime, anywhere with verified professionals."
@@ -22,7 +19,6 @@ export default function Home() {
         canonical="https://kushalapp.com/"
         url="https://kushalapp.com/"
       />
-      <Navbar />
       <div className="relative min-h-screen bg-brand-bg text-brand-text">
         <main>
           <Hero />
@@ -33,13 +29,9 @@ export default function Home() {
           <AppScreenshotShowcase />
           <KushalDualBenefits />
           <KushalTestimonials />
-          <DownloadCTA
-            bgColor="var(--kushal-white)"
-            cardBgColor="var(--kushal-white3)"
-          />
+          <DownloadCTA bgColor="var(--kushal-white)" cardBgColor="var(--kushal-white3)" />
         </main>
       </div>
-      <Footer />
-    </React.Fragment>
+</>
   );
 }

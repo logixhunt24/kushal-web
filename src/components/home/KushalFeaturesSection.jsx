@@ -204,6 +204,9 @@ export default function KushalFeatures() {
               >
                 {}
                 <div
+                  style={{
+                    borderRadius: "var(--kushal-radius)",
+                  }}
                   className={`absolute inset-0 bg-gradient-to-br ${card.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none`}
                 />
 

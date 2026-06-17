@@ -12,6 +12,12 @@ export default function KushalFooter() {
     { name: "Contact Us", href: "/contact" },
   ];
 
+  const legalLinks = [
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms & Conditions", href: "/terms" },
+    { name: "Refund Policy", href: "/refund" },
+  ];
+
   const socials = [
     {
       svg: (
@@ -50,7 +56,7 @@ export default function KushalFooter() {
         fontFamily: "var(--kushal-font)",
       }}
     >
-      {}
+      {/* Glow Effect */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[400px] h-[180px] rounded-full blur-[100px] opacity-25"
@@ -61,12 +67,11 @@ export default function KushalFooter() {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1140px]">
-        {}
+        {/* Main Footer Content */}
         <div className="grid gap-8 md:grid-cols-12 items-start pb-10 border-b border-purple-950/30">
-          {}
+          {/* Brand Column */}
           <div className="md:col-span-5 space-y-4">
-            {}
-            <div className=" h-22 flex items-center justify-start overflow-hidden">
+            <div className="h-22 flex items-center justify-start overflow-hidden">
               <img
                 src="/KUSHLAPP_LOGO_WHITE_COLOR_HORIZONTAL.png"
                 alt="KushalApp Logo"
@@ -104,6 +109,7 @@ export default function KushalFooter() {
             </div>
           </div>
 
+          {/* Menu Column */}
           <div className="md:col-span-3 md:ml-auto space-y-3">
             <h5 className="text-[11px] font-black tracking-widest uppercase text-neutral-100/60">
               Menu
@@ -127,7 +133,7 @@ export default function KushalFooter() {
             </ul>
           </div>
 
-          {}
+          {/* Contact Column */}
           <div className="md:col-span-4 md:ml-auto space-y-3">
             <h5 className="text-[11px] font-black tracking-widest uppercase text-neutral-100/60">
               Contact Details
@@ -145,7 +151,6 @@ export default function KushalFooter() {
                   India
                 </span>
               </div>
-              {}
               <div className="flex items-center gap-2.5 group cursor-pointer">
                 <Mail
                   size={15}
@@ -159,12 +164,26 @@ export default function KushalFooter() {
           </div>
         </div>
 
-        {}
-        <div className="pt-6 flex justify-center items-center text-[13px] font-medium text-neutral-400/60">
-          <p
-            style={{ fontFamily: "var(--kushal-secondary-font)" }}
-            className="text-center tracking-wide"
-          >
+        {/* Bottom Bar: Legal Links & Copyright */}
+        <div 
+          className="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[13px] font-medium text-neutral-400/60"
+          style={{ fontFamily: "var(--kushal-secondary-font)" }}
+        >
+          {/* Legal Pages Array Mapping */}
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 order-2 sm:order-1">
+            {legalLinks.map((legal, index) => (
+              <Link
+                key={index}
+                to={legal.href}
+                className="hover:text-white transition-colors duration-150 tracking-wide"
+              >
+                {legal.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Copyright text */}
+          <p className="text-center tracking-wide order-1 sm:order-2">
             &copy; {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

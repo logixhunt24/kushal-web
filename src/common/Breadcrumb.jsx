@@ -39,12 +39,15 @@ const Breadcrumb = () => {
     .replace(/\b\w/g, (c) => c.toUpperCase());
 
   const bgMap = {
-    "/": homeBg,
-    "/about": teamBg,
-    "/features": featuresBg,
-    "/providers": providersBg,
-    "/contact": contactBg,
-  };
+  "/": homeBg,
+  "/about": teamBg,
+  "/features": featuresBg,
+  "/providers": providersBg,
+  "/contact": contactBg,
+  "/privacy": teamBg,
+  "/terms": teamBg,
+  "/refund": teamBg,
+};
   const bgImage = bgMap[pathname] || homeBg;
 
   const crumbs = pathSegments.map((segment, index) => {

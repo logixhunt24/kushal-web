@@ -17,7 +17,7 @@ const Providers = () => {
         canonical="https://kushalapp.com/providers"
         url="https://kushalapp.com/providers"
       />
-      <Navbar />
+      {/* <Navbar /> */}
       <ProfessionalBenefits />
       <ProviderCTA />
       <HowToBecomeProvider />
@@ -25,7 +25,7 @@ const Providers = () => {
         bgColor="var(--kushal-white)"
         cardBgColor="var(--kushal-white3)"
       />
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 };

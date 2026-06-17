@@ -2,6 +2,7 @@ import React from "react";
 import SEO from "../components/SEO.jsx";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
+
 import KushalFeaturesSection from "../components/features/KushalFeaturesSection";
 import DownloadCTA from "../common/DownloadCTA";
 
@@ -15,10 +16,10 @@ export default function Features() {
         canonical="https://kushalapp.com/features"
         url="https://kushalapp.com/features"
       />
-      <Navbar />
+      {/* <Navbar /> */}
       <KushalFeaturesSection />
       <DownloadCTA />
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 }
